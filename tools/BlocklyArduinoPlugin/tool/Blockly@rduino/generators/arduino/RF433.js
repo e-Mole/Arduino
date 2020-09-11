@@ -162,12 +162,12 @@ Blockly.Arduino.rf433_tx = function() {
 Blockly.Arduino.rf433_tx_bytes = function() {
   
   var pin = Blockly.Arduino.valueToCode(this, 'PIN', Blockly.Arduino.ORDER_ATOMIC);
+  var in_b0 = Blockly.Arduino.valueToCode(this, 'MESSAGE_B0', Blockly.Arduino.ORDER_ATOMIC);
   var in_b1 = Blockly.Arduino.valueToCode(this, 'MESSAGE_B1', Blockly.Arduino.ORDER_ATOMIC);
   var in_b2 = Blockly.Arduino.valueToCode(this, 'MESSAGE_B2', Blockly.Arduino.ORDER_ATOMIC);
   var in_b3 = Blockly.Arduino.valueToCode(this, 'MESSAGE_B3', Blockly.Arduino.ORDER_ATOMIC);
   var in_b4 = Blockly.Arduino.valueToCode(this, 'MESSAGE_B4', Blockly.Arduino.ORDER_ATOMIC);
-  var in_b5 = Blockly.Arduino.valueToCode(this, 'MESSAGE_B5', Blockly.Arduino.ORDER_ATOMIC);
-  var in_b6 = Blockly.Arduino.valueToCode(this, 'MESSAGE_B6', Blockly.Arduino.ORDER_ATOMIC);  
+  var in_b5 = Blockly.Arduino.valueToCode(this, 'MESSAGE_B5', Blockly.Arduino.ORDER_ATOMIC);  
 
   Blockly.Arduino.includes_['define_RF433rxready'] = 
   '#include <VirtualWire.h>\n';
@@ -178,12 +178,12 @@ Blockly.Arduino.rf433_tx_bytes = function() {
 
   var code = 
   '  uint8_t message[6] = {0,0,0,0,0,0};\n' +
-  '  message[0] = '+ in_b1 + ';\n' + 
-  '  message[1] = '+ in_b2 + ';\n' + 
-  '  message[2] = '+ in_b3 + ';\n' + 
-  '  message[3] = '+ in_b4 + ';\n' + 
-  '  message[4] = '+ in_b5 + ';\n' + 
-  '  message[5] = '+ in_b6 + ';\n' +   
+  '  message[0] = '+ in_b0 + ';\n' + 
+  '  message[1] = '+ in_b1 + ';\n' + 
+  '  message[2] = '+ in_b2 + ';\n' + 
+  '  message[3] = '+ in_b3 + ';\n' + 
+  '  message[4] = '+ in_b4 + ';\n' + 
+  '  message[5] = '+ in_b5 + ';\n' +   
   '  vw_send((uint8_t *)message,6);\n' +
   '  vw_wait_tx(); // Wait until the whole message is gone';
 

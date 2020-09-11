@@ -83,7 +83,7 @@ Blockly.Blocks.rf433_rx_bytes = {
 Blockly.Blocks['rf433_rx_b0'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("RX Byte 1");
+        .appendField("RX Byte 0");
     this.setInputsInline(false);
     this.setOutput(true, "Number");
     this.setColour(0);
@@ -92,18 +92,6 @@ Blockly.Blocks['rf433_rx_b0'] = {
   }
 };
 
-
-Blockly.Blocks['rf433_rx_b0'] = {
-  init: function() {
-    this.appendDummyInput()
-        .appendField("RX Byte 1");
-    this.setInputsInline(false);
-    this.setOutput(true, "Number");
-    this.setColour(0);
-    this.setTooltip('Vrací byte z přiajaté zprávy');
-    this.setHelpUrl('https://www.arduino.cc/reference/en/');
-  }
-};
 
 Blockly.Blocks['rf433_rx_b1'] = {
   init: function() {
@@ -200,7 +188,10 @@ Blockly.Blocks.rf433_tx_bytes = {
     this.appendValueInput("PIN")
         .setCheck("Number")
         .appendField(Blockly.Msg.RF433_tx_INPUT1);
-    this.appendValueInput("MESSAGE_B1")
+    this.appendValueInput("MESSAGE_B0")
+        .setCheck("Number")
+        .appendField("Byte 0");
+	this.appendValueInput("MESSAGE_B1")
         .setCheck("Number")
         .appendField("Byte 1");
 	this.appendValueInput("MESSAGE_B2")
@@ -215,9 +206,6 @@ Blockly.Blocks.rf433_tx_bytes = {
 	this.appendValueInput("MESSAGE_B5")
         .setCheck("Number")
         .appendField("Byte 5");
-	this.appendValueInput("MESSAGE_B6")
-        .setCheck("Number")
-        .appendField("Byte 6");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setTooltip(Blockly.Msg.RF433_tx_TOOLTIP);

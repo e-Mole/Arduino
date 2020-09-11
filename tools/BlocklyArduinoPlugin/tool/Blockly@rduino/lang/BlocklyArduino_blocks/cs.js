@@ -83,15 +83,15 @@ Blockly.Msg.ARD_TYPE_ARRAY = "Pole";
 Blockly.Msg.ARD_TYPE_BOOL = "Boolean";
 Blockly.Msg.ARD_TYPE_CHAR = "Znak";
 Blockly.Msg.ARD_TYPE_CHILDBLOCKMISSING = "ChildBlockMissing";
-Blockly.Msg.ARD_TYPE_DECIMAL = "Desítkové číslo";
-Blockly.Msg.ARD_TYPE_LONG = "Velké číslo";
+Blockly.Msg.ARD_TYPE_DECIMAL = "Desetine cislo";
+Blockly.Msg.ARD_TYPE_LONG = "Velke cislo";
 Blockly.Msg.ARD_TYPE_NULL = "Null";
-Blockly.Msg.ARD_TYPE_NUMBER = "Číslo";
-Blockly.Msg.ARD_TYPE_SHORT = "Malé číslo (bajt)";
+Blockly.Msg.ARD_TYPE_NUMBER = "Cislo";
+Blockly.Msg.ARD_TYPE_SHORT = "Male cislo (bajt)";
 Blockly.Msg.ARD_TYPE_TEXT = "Text";
-Blockly.Msg.ARD_TYPE_UNDEF = "Nedefinováno";
-Blockly.Msg.ARD_TYPE_UNS_NUMBER = "Bezznamínkové číslo";
-Blockly.Msg.ARD_TYPE_UNS_LONG = "Dlouhé číslo bez znaménka";
+Blockly.Msg.ARD_TYPE_UNDEF = "Nedefinovano";
+Blockly.Msg.ARD_TYPE_UNS_NUMBER = "Bezznaminkové cislo";
+Blockly.Msg.ARD_TYPE_UNS_LONG = "Velke cislo bez znamenka";
 Blockly.Msg.ARD_TYPE_VOLATILE = "Volatile integer";
 
 //**********************************Kategorie************* ***********************************

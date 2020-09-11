@@ -2,105 +2,225 @@
   {
     "Sourcefile": null,
     "Include": "",
-    "Includepath": "C:\\arduino-blockly\\hardware\\arduino\\avr\\cores\\arduino"
+    "Includepath": "D:\\arduino-blockly\\hardware\\arduino\\avr\\cores\\arduino"
   },
   {
     "Sourcefile": null,
     "Include": "",
-    "Includepath": "C:\\arduino-blockly\\hardware\\arduino\\avr\\variants\\eightanaloginputs"
+    "Includepath": "D:\\arduino-blockly\\hardware\\arduino\\avr\\variants\\eightanaloginputs"
   },
   {
-    "Sourcefile": "c:\\arduino-blockly\\build\\sketch\\sketch_sep10a.ino.cpp",
+    "Sourcefile": "d:\\arduino-blockly\\build\\sketch\\sketch_sep10a.ino.cpp",
     "Include": "SPI.h",
-    "Includepath": "C:\\arduino-blockly\\hardware\\arduino\\avr\\libraries\\SPI\\src"
+    "Includepath": "D:\\arduino-blockly\\hardware\\arduino\\avr\\libraries\\SPI\\src"
   },
   {
-    "Sourcefile": "c:\\arduino-blockly\\build\\sketch\\sketch_sep10a.ino.cpp",
+    "Sourcefile": "d:\\arduino-blockly\\build\\sketch\\sketch_sep10a.ino.cpp",
     "Include": "Wire.h",
-    "Includepath": "C:\\arduino-blockly\\hardware\\arduino\\avr\\libraries\\Wire\\src"
+    "Includepath": "D:\\arduino-blockly\\hardware\\arduino\\avr\\libraries\\Wire\\src"
   },
   {
-    "Sourcefile": "c:\\arduino-blockly\\build\\sketch\\sketch_sep10a.ino.cpp",
+    "Sourcefile": "d:\\arduino-blockly\\build\\sketch\\sketch_sep10a.ino.cpp",
     "Include": "Adafruit_GFX.h",
-    "Includepath": "C:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_GFX_Library"
+    "Includepath": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_GFX_Library"
   },
   {
-    "Sourcefile": "c:\\arduino-blockly\\build\\sketch\\sketch_sep10a.ino.cpp",
+    "Sourcefile": "d:\\arduino-blockly\\build\\sketch\\sketch_sep10a.ino.cpp",
     "Include": "Adafruit_SSD1306.h",
-    "Includepath": "C:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_SSD1306"
+    "Includepath": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_SSD1306"
   },
   {
-    "Sourcefile": "c:\\arduino-blockly\\build\\sketch\\sketch_sep10a.ino.cpp",
-    "Include": "VirtualWire.h",
-    "Includepath": "C:\\arduino-blockly\\portable\\sketchbook\\libraries\\VirtualWire"
+    "Sourcefile": "d:\\arduino-blockly\\build\\sketch\\sketch_sep10a.ino.cpp",
+    "Include": "IRremote.h",
+    "Includepath": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src"
   },
   {
-    "Sourcefile": "c:\\arduino-blockly\\build\\sketch\\sketch_sep10a.ino.cpp",
+    "Sourcefile": "d:\\arduino-blockly\\build\\sketch\\sketch_sep10a.ino.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\arduino-blockly\\hardware\\arduino\\avr\\libraries\\SPI\\src\\SPI.cpp",
+    "Sourcefile": "D:\\arduino-blockly\\hardware\\arduino\\avr\\libraries\\SPI\\src\\SPI.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\arduino-blockly\\hardware\\arduino\\avr\\libraries\\Wire\\src\\Wire.cpp",
+    "Sourcefile": "D:\\arduino-blockly\\hardware\\arduino\\avr\\libraries\\Wire\\src\\Wire.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\arduino-blockly\\hardware\\arduino\\avr\\libraries\\Wire\\src\\utility\\twi.c",
+    "Sourcefile": "D:\\arduino-blockly\\hardware\\arduino\\avr\\libraries\\Wire\\src\\utility\\twi.c",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_GFX_Library\\Adafruit_GFX.cpp",
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_GFX_Library\\Adafruit_GFX.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_GFX_Library\\Adafruit_GrayOLED.cpp",
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_GFX_Library\\Adafruit_GrayOLED.cpp",
     "Include": "Adafruit_I2CDevice.h",
-    "Includepath": "C:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_BusIO"
+    "Includepath": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_BusIO"
   },
   {
-    "Sourcefile": "C:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_GFX_Library\\Adafruit_GrayOLED.cpp",
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_GFX_Library\\Adafruit_GrayOLED.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_GFX_Library\\Adafruit_SPITFT.cpp",
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_GFX_Library\\Adafruit_SPITFT.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_GFX_Library\\glcdfont.c",
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_GFX_Library\\glcdfont.c",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_SSD1306\\Adafruit_SSD1306.cpp",
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_SSD1306\\Adafruit_SSD1306.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\arduino-blockly\\portable\\sketchbook\\libraries\\VirtualWire\\VirtualWire.cpp",
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\IRremote.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_BusIO\\Adafruit_BusIO_Register.cpp",
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\esp32.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_BusIO\\Adafruit_I2CDevice.cpp",
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\irPronto.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_BusIO\\Adafruit_SPIDevice.cpp",
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\irRecv.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\irSend.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_Aiwa.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_BoseWave.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_Denon.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_Dish.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_JVC.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_LG.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_Lego_PF.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_MagiQuest.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_Mitsubishi.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_NEC.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_Panasonic.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_RC5_RC6.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_Samsung.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_Sanyo.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_Sharp.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_Sharp_alt.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_Sony.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_Template.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\ir_Whynter.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\IRremote\\src\\sam.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_BusIO\\Adafruit_BusIO_Register.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_BusIO\\Adafruit_I2CDevice.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "D:\\arduino-blockly\\portable\\sketchbook\\libraries\\Adafruit_BusIO\\Adafruit_SPIDevice.cpp",
     "Include": "",
     "Includepath": null
   }

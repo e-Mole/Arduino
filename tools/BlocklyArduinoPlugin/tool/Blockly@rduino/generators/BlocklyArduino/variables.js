@@ -48,10 +48,63 @@ Blockly.Arduino.variables_set = function(block) {
 };
 
 Blockly.Arduino.variables_const = function(block) {
-  var argument0 = Blockly.Arduino.valueToCode(block, 'VALUE', Blockly.Arduino.ORDER_ASSIGNMENT) || '0';
+  var argument0 = Blockly.Arduino.valueToCode(block, 'VAL_CONST', Blockly.Arduino.ORDER_ASSIGNMENT) || '0';
   var varName = Blockly.Arduino.variableDB_.getName(block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE);
   var typeBlock = Blockly.Arduino.getArduinoType_(Blockly.Types.getChildBlockType(block));
-  Blockly.Arduino.variables_[varName] = 'const ' + typeBlock + ' ' + varName + ' = ' + argument0 + ';';
+  
+  var in_type = block.getFieldValue('VARIABLE_SETTYPE_TYPE');
+  var c_type = "";
+  
+  switch (in_type) {
+	case "VOLATIL_NUMBER":
+      c_type = 'volatile int';
+      break;
+    case "SHORT_NUMBER":
+      c_type = 'byte';
+      break;
+    case "NUMBER":
+      c_type = 'int';
+      break;
+    case "UNS_NUMBER":
+      c_type = 'unsigned int';
+      break;
+    case "LARGE_NUMBER":
+      c_type = 'long';
+      break;
+    case "LARGE_UNS_NUMBER":
+      c_type = 'unsigned long';
+      break;
+    case "DECIMAL":
+      c_type = 'float';
+      break;
+    case "TEXT":
+      c_type = 'String';
+      break;
+    case "CHARACTER":
+      c_type = 'char';
+      break;
+    case "BOOLEAN":
+      c_type = 'bool';
+      break;
+    case "NULL":
+      c_type = 'void';
+      break;
+    case "ARRAY":
+    	c_type = Blockly.Arduino.getArduinoType_(typeBlockly.arrayType);
+        break;
+    case "UNDEF":
+      c_type = 'undefined';
+      break;
+    case "CHILD_BLOCK_MISSING":
+      // If no block connected default to int, change for easier debugging
+      //c_type = 'ChildBlockMissing';
+      c_type = 'int';
+      break;
+    default:
+      c_type = 'Invalid Blockly Type';
+    } 
+  
+  Blockly.Arduino.variables_[varName] = 'const ' + c_type + ' ' + varName + ' = ' + argument0 + ';';
   return '';
 };
 
@@ -59,6 +112,59 @@ Blockly.Arduino['variables_set_init'] = function(block){
   var argument0 = Blockly.Arduino.valueToCode(block, 'VALUE', Blockly.Arduino.ORDER_ASSIGNMENT) || '0';
   var varName = Blockly.Arduino.variableDB_.getName(block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE);
   var varType = Blockly.Arduino.getArduinoType_(Blockly.Types.getChildBlockType(block));
-  Blockly.Arduino.variables_[varName] = varType + ' ' + varName + ' = ' + argument0 + ';';
+  
+  var in_type = block.getFieldValue('VARIABLE_SETTYPE_TYPE');
+  var c_type = "";
+  
+  switch (in_type) {
+	case "VOLATIL_NUMBER":
+      c_type = 'volatile int';
+      break;
+    case "SHORT_NUMBER":
+      c_type = 'byte';
+      break;
+    case "NUMBER":
+      c_type = 'int';
+      break;
+    case "UNS_NUMBER":
+      c_type = 'unsigned int';
+      break;
+    case "LARGE_NUMBER":
+      c_type = 'long';
+      break;
+    case "LARGE_UNS_NUMBER":
+      c_type = 'unsigned long';
+      break;
+    case "DECIMAL":
+      c_type = 'float';
+      break;
+    case "TEXT":
+      c_type = 'String';
+      break;
+    case "CHARACTER":
+      c_type = 'char';
+      break;
+    case "BOOLEAN":
+      c_type = 'bool';
+      break;
+    case "NULL":
+      c_type = 'void';
+      break;
+    case "ARRAY":
+    	c_type = Blockly.Arduino.getArduinoType_(typeBlockly.arrayType);
+        break;
+    case "UNDEF":
+      c_type = 'undefined';
+      break;
+    case "CHILD_BLOCK_MISSING":
+      // If no block connected default to int, change for easier debugging
+      //c_type = 'ChildBlockMissing';
+      c_type = 'int';
+      break;
+    default:
+      c_type = 'Invalid Blockly Type';
+    } 
+    
+  Blockly.Arduino.variables_[varName] = c_type + ' ' + varName + ' = ' + argument0 +';';
   return '';
 };
