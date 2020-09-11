@@ -1,10 +1,23 @@
-### Arduino TechnoEduc tout intégré
+### Blockly arduino
 
+Česká mutace projektu Blockly@rduino
 
-EDI Arduino identique à l'original en version **1.8.13**, mais **enrichi** de programmes et de bibliothèques (_librairies_) nécessaires pour permettre aux enseignants de disposer d'un environnement clé en main pour :
-- exécuter [Blockly@rduino](https://github.com/technologiescollege/Blockly-at-rduino) pour une utilisation hors ligne : téléversement, moniteur série, pilotage des entrées/sorties, etc. Celui-ci est intégré via un [plugin](https://github.com/technologiescollege/BlocklyArduinoIDEPlugin)
-- installer _FirmataPlus_ et permettre le pilotage par **[Scratch2](http://scratch.mit.edu/)** à l'aide de **[s2aio](https://github.com/technologiescollege/s2aio-control-panel)**
-- installer le _firmware de [MakeBlock](http://www.makeblock.cc/)_ et permettre le pilotage par **[mBlock](http://mblock.cc)**
-- installer les _shellMega ou Uno_ permettant la communication avec le logiciel **Organigram**, de la société [TechnoZone51](http://www.technozone51.fr/)
+Programování Arduino desek v uživatelsky příjemném prostředí Google Blockly se spoustou knihoven.
+- Základ tvoří portable Arduino 1.8.13
+- Prostředí se pouští přímo z Arduino IDE - Menu Nástroje - Blockly@arduino
+- Není nutná instalace žádných dalších komponent
+- Obsajuje uživatelské bloky do kterých se dají dopsat chybějícíc příkazy
 
-![](https://raw.githubusercontent.com/technologiescollege/arduino/master/lib/about.png)
+Seznam vyzkoušených a počeštěných knihoven
+- Arduino - Nejběžnější funkce pro obsluhu HW, čtení vstupů, výstupů, obsluhu PWM až po ukládání dat na SD kartu
+- I2C - Komunikace po sběrnici I2C, je implementována jak HW tak SW varianta
+- SPI - Podpora pro HW SPI v různých režimech
+- DHT - DHT11, DHT21, DHT22
+- RF433 - Komunikace promocí knihovny VirtualWire možnost přenášet string i pole bajtů
+- Adafruit SSD1306 - I2C Oled display 128x64, 128x32, 64x64 a 64x32
+- IR - Čtení povelů z IR dálkového ovladače, obsahuje debug funkci na vypisování IR kódů na seriový port
+- Sharp IR - Podpora pro měření vzdálenosti pomocí snímačů Sharp GP2Yxxxx
+- Motor Shieldy - Obsluha různých budičů pro ovládání kolových/pásových robotů pomocí PWM
+- Neopixel WS2812B - Ovládání adresovatelných LED pásků
+
+![](https://github.com/milikiller/arduino/blob/master/nahled.png?raw=true)
