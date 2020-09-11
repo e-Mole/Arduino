@@ -34,7 +34,7 @@ Blockly.Arduino.lp2i_u8g_draw_4strings = function() {
 	 'u8g.firstPage();\n'
 	+ 'do {'
 	+ 'u8g.setFont(u8g_font_unifont);\n'
-	+ 'u8g.drawStr( 0, 22, "Bonjour !");\n'
+	+ 'u8g.drawStr( 0, 22, "! Ahoj !");\n'
 	+ '} while( u8g.nextPage());\n'
 	+ 'delay(1000);\n';
   var code = 'u8g.firstPage();\n'
@@ -57,7 +57,7 @@ Blockly.Arduino.lp2i_u8g_print = function() {
 	'u8g.firstPage();\n'
 	+ 'do {'
 	+ 'u8g.setFont(u8g_font_unifont);\n'
-	+ 'u8g.drawStr( 0, 22, "Bonjour !");\n'
+	+ 'u8g.drawStr( 0, 22, "! Ahoj !");\n'
 	+ '} while( u8g.nextPage());\n'
 	+ 'delay(1000);\n';
   var code =
@@ -83,7 +83,7 @@ Blockly.Arduino.lp2i_u8g_4draw_print = function() {
 	 'u8g.firstPage();\n'
 	+ 'do {'
 	+ 'u8g.setFont(u8g_font_unifont);\n'
-	+ 'u8g.drawStr( 0, 22, "Bonjour !");\n'
+	+ 'u8g.drawStr( 0, 22, "! Ahoj !");\n'
 	+ '} while( u8g.nextPage());\n'
 	+ 'delay(1000);\n';
   var code = 'u8g.firstPage();\n'

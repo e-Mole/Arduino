@@ -19,17 +19,19 @@ Blockly.Arduino['SSD1306_init'] = function() {
 	Blockly.Arduino.includes_['include_Adafruit_GFX'] = '#include <Adafruit_GFX.h>';
 	Blockly.Arduino.includes_['include_Adafruit_SSD1306'] = '#include <Adafruit_SSD1306.h>';
 
-        Blockly.Arduino.definitions_['define_WIDTH'] = '#define SCREEN_WIDTH ' + dropdown_width + ' // OLED display width, in pixels';
-        Blockly.Arduino.definitions_['define_HEIGHT'] = '#define SCREEN_HEIGHT ' + dropdown_height + ' // OLED display height, in pixels';
-        Blockly.Arduino.definitions_['define_OLED_RESET'] = '#define OLED_RESET ' + dropdown_oled_reset + ' // Reset pin # (or -1 if sharing Arduino reset pin)';
+    Blockly.Arduino.definitions_['define_WIDTH'] = '#define SCREEN_WIDTH ' + dropdown_width + ' // OLED display width, in pixels';
+    Blockly.Arduino.definitions_['define_HEIGHT'] = '#define SCREEN_HEIGHT ' + dropdown_height + ' // OLED display height, in pixels';
+    Blockly.Arduino.definitions_['define_OLED_RESET'] = '#define OLED_RESET ' + dropdown_oled_reset + ' // Reset pin # (or -1 if sharing Arduino reset pin)';
 	
 	Blockly.Arduino.definitions_['obj_display'] = 'Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);';
 
 	Blockly.Arduino.setups_['setup_comment'] = '// SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally';
 	Blockly.Arduino.setups_['setup_display'] = 'display.begin(SSD1306_SWITCHCAPVCC, ' + dropdown_I2C_address + '); // I2C address ' + dropdown_I2C_address;
+    Blockly.Arduino.setups_['setup_display_f_size'] = 'display.setTextSize(1); // Set default font size';
+    Blockly.Arduino.setups_['setup_display_f_color'] = 'display.setTextColor(SSD1306_WHITE); // Set default font color';
  
 	var code = '';
-	return [code, Blockly.Arduino.ORDER_ATOMIC]; 
+	return code; 
 };
 
 Blockly.Arduino['SSD1306_display'] = function() {

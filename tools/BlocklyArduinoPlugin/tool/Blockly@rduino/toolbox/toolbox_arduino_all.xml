@@ -503,6 +503,11 @@
 			</value>
 		</block>
 	</category>
+    <category name="CAT_DHT" colour="#EA9576">
+		<block type="dht_inicializace" disabled="false"></block>
+        <block type="teplota" disabled="false"></block>
+        <block type="vlhkost" disabled="false"></block>
+	</category>
 	<category name="CAT_LCD_SCREEN" colour="#87AD34">
 		<category name="- Grove I2C LCD RGB" colour="#8ec31f">
 				<block type="grove_lcd_rgb_init"></block>
@@ -1940,9 +1945,17 @@
 	</category>
 
 	<category name="CAT_RF433" colour="#0152AB">
+		<block type="rf433_tx" colour="#0152AB"></block>
+		<block type="rf433_tx_bytes" colour="#0152AB"></block>
 		<block type="rf433_rxready" colour="#0152AB"></block>
 		<block type="rf433_rx" colour="#0152AB"></block>
-		<block type="rf433_tx" colour="#0152AB"></block>
+		<block type="rf433_rx_bytes" colour="#0152AB"></block>
+		<block type="rf433_rx_b0" colour="#0152AB"></block>
+		<block type="rf433_rx_b1" colour="#0152AB"></block>
+		<block type="rf433_rx_b2" colour="#0152AB"></block>
+		<block type="rf433_rx_b3" colour="#0152AB"></block>
+		<block type="rf433_rx_b4" colour="#0152AB"></block>
+		<block type="rf433_rx_b5" colour="#0152AB"></block>
 	</category>
 
 	<category name="CAT_RF433_2" colour="#0152AB">
@@ -2493,6 +2506,19 @@
 			<block type="joystick_mot" colour="#005D9D"></block>
 		</category>
 		<sep></sep>
+		<block type="generic_motor_s">
+			<value name="SPEEDA">
+				<shadow type="math_number">
+					<field name="NUM">175</field>
+				</shadow>
+			</value>
+			<value name="SPEEDB">
+				<shadow type="math_number">
+					<field name="NUM">175</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="generic_motor"></block>
 		<block type="arduino_s">
 			<value name="SPEEDA">
 				<shadow type="math_number">
@@ -2519,18 +2545,6 @@
 			</value>
 		</block>
 		<block type="dfrobot_s">
-			<value name="SPEEDA">
-				<shadow type="math_number">
-					<field name="NUM">175</field>
-				</shadow>
-			</value>
-			<value name="SPEEDB">
-				<shadow type="math_number">
-					<field name="NUM">175</field>
-				</shadow>
-			</value>
-		</block>
-		<block type="generic_motor_s">
 			<value name="SPEEDA">
 				<shadow type="math_number">
 					<field name="NUM">175</field>
@@ -2581,7 +2595,6 @@
 				</shadow>
 			</value>
 		</block>
-		<block type="generic_motor"></block>
 	</category>
 	<category name="CAT_MBOT_1" colour="#33C7F2">
 		<block type="mbot_forward"></block>

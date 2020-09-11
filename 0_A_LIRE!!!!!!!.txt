@@ -1,3 +1,0 @@
-Les fichiers '1ER_LANCEMENT.bat' & '1RST_LAUNCH.bat' sont identiques et permettent de nettoyer vos profils si jamais vous utilisiez une version non portable d'Arduino.
-
-ATTENTION !!! Cela supprime donc les bibliothèques que vous auriez pu ajouter, recopiez celles-ci depuis Internet dans le dossier '\portable\sketchbook\libraries'.

@@ -51,14 +51,11 @@
 #endif
 
 #include "Adafruit_SSD1306.h"
-#include "splash.h"
 #include <Adafruit_GFX.h>
 
 // SOME DEFINES AND STATIC VARIABLES USED INTERNALLY -----------------------
 
-#if defined(I2C_BUFFER_LENGTH)
-#define WIRE_MAX I2C_BUFFER_LENGTH ///< Particle or similar Wire lib
-#elif defined(BUFFER_LENGTH)
+#if defined(BUFFER_LENGTH)
 #define WIRE_MAX BUFFER_LENGTH ///< AVR or similar Wire lib
 #elif defined(SERIAL_BUFFER_SIZE)
 #define WIRE_MAX (SERIAL_BUFFER_SIZE - 1) ///< Newer Wire uses RingBuffer
@@ -466,14 +463,7 @@ bool Adafruit_SSD1306::begin(uint8_t vcs, uint8_t addr, bool reset,
     return false;
 
   clearDisplay();
-  if (HEIGHT > 32) {
-    drawBitmap((WIDTH - splash1_width) / 2, (HEIGHT - splash1_height) / 2,
-               splash1_data, splash1_width, splash1_height, 1);
-  } else {
-    drawBitmap((WIDTH - splash2_width) / 2, (HEIGHT - splash2_height) / 2,
-               splash2_data, splash2_width, splash2_height, 1);
-  }
-
+ 
   vccstate = vcs;
 
   // Setup pin directions
@@ -583,6 +573,8 @@ bool Adafruit_SSD1306::begin(uint8_t vcs, uint8_t addr, bool reset,
   ssd1306_commandList(init5, sizeof(init5));
 
   TRANSACTION_END
+
+  display();
 
   return true; // Success
 }

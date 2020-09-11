@@ -265,8 +265,10 @@ BlocklyDuino.bindFunctions = function() {
 	$('#btn_redo').on("click", BlocklyDuino.Redo);
 	$('#btn_verify_local').on("click", BlocklyDuino.verify_local_Click_IDE);
 	$('#btn_flash_local').on("click", BlocklyDuino.uploadClick_IDE);
+	$('#btn_flash_localx').on("click", BlocklyDuino.uploadClick_IDE);
 	$('#btn_pasteIDEArduino').on("click", BlocklyDuino.ArduinoIDEClick_IDE);
 	$('#btn_saveArduino').on("click", BlocklyDuino.saveArduinoFile_IDE);
+	$('#btn_saveArduinox').on("click", BlocklyDuino.saveArduinoFile_IDE);
 	$('#btn_block_capture').on("click", BlocklyDuino.workspace_capture_IDE);
 	$('#btn_saveXML, #menu_12').on("click", BlocklyDuino.saveXmlFile_IDE);
 	$('#btn_fakeload, #menu_11').on("click", BlocklyDuino.load_IDE);
@@ -276,7 +278,9 @@ BlocklyDuino.bindFunctions = function() {
 	$('#btn_verify_local').remove();
 	$('#debug_arduino').remove();
 	$('#tab_supervision').remove();
-	$('#tab_arduino').remove();
+	//$('#tab_arduino').remove();
+    $('#barre').remove();
+    
 	$('#pre_arduino').css({'height' : '95%'});
 		
 	$('#toggle-Colors').on("change", BlocklyDuino.toggleTextColors);
@@ -1121,19 +1125,25 @@ BlocklyDuino.openWiringDialog = function() {
 };*/
 
 BlocklyDuino.DialogCode = function() {
+    
+    var wWidth = $(window).width();
+    var dWidth = wWidth * 0.30;
+    var wHeight = $(window).height();
+    var dHeight = wHeight * 0.80;
+    
 	var dialogCode = $("#pre_previewArduino").dialog({
 		//$('#arduino_IDE_code').html(prettyPrintOne($('#pre_arduino').html(), 'cpp'));
 		autoOpen: false,
 		resizable: true,
-		height: 600,
-		width: 400,
+		height: dHeight,
+		width: dWidth,
 		show: {
-			effect: "drop",
-			duration: 1000
+			effect: "fade",
+			duration: 100
 		},
 		hide: {
-			effect: "drop",
-			duration: 1000
+			effect: "fade",
+			duration: 100
 		},
 		position: {
 			my: "right top",
@@ -1142,21 +1152,21 @@ BlocklyDuino.DialogCode = function() {
 		},
 		buttons: [
 			{
-				text: "copy-paste",
+				text: "Kopírovat",
 				icon: {
 					primary: "btn btn_ver btn-danger btn-block"
 					},
 				click: BlocklyDuino.ArduinoIDEClick_IDE,
 			},
 			{
-				text: 'save',
+				text: 'Uložit',
 				icons: {
 					primary: "ui-icon-cancel"
 					},
 				click: BlocklyDuino.saveArduinoFile_IDE,
 			},
 			{
-				text: 'upload',
+				text: 'Nahrát do desky',
 				icons: {
 					primary: "ui-icon-cancel"
 					},

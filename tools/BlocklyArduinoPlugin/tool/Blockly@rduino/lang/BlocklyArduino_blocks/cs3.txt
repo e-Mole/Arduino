@@ -1,0 +1,452 @@
+//added july 17th 2015
+Blockly.Msg.BQ_PIN = "Pin #";
+Blockly.Msg.BQ_PIN_DIGITAL = "Digital Pin#";
+Blockly.Msg.BQ_PIN_PWM = "PWM~ Pin#";
+Blockly.Msg.BQ_PIN_ANALOG = "Analog Pin#";
+Blockly.Msg.BQ_HELPURL = "http://www.bq.com/fr/produits/kit-robotica.html";
+Blockly.Msg.BQ_LED1_TOOLTIP = "Sortie led (réf : LED)";
+Blockly.Msg.BQ_BUZZER1_TOOLTIP = "Sortie Buzzer (réf : BUZZER)";
+Blockly.Msg.BQ_SONAR1_TOOLTIP = "Entrée Ultrason (réf : ULTRASON)";
+Blockly.Msg.BQ_SERVO1_TITLEA = "positionne le mini servo-moteur";
+Blockly.Msg.BQ_SERVO1_TITLEB = "sur l'angle [0~180°]";
+Blockly.Msg.BQ_SERVO1_TOOLTIP = "Sortie Servo-moteur (réf : MINI-SERVO)";
+Blockly.Msg.BQ_SERVO2_TITLEA = "faire tourner le servo-moteur à rotation continue";
+Blockly.Msg.BQ_SERVO2_TITLEB = "sens horaire (VRAI ou FAUX ?)";
+Blockly.Msg.BQ_SERVO2_TITLEC = "à la vitesse [0~255] de";
+Blockly.Msg.BQ_SERVO2_TITLED = "pendant un délai (ms) de";
+Blockly.Msg.BQ_SERVO2_TOOLTIP = "rotation possible entre 0~180 degrés : 0~90 puissance variable dans un sens ; 90~180 puissance variable dans l'autre sens";
+Blockly.Msg.BQ_BP_TOOLTIP = 'Entrée bouton poussoir (réf : BOUTON-POUSSOIR)';
+Blockly.Msg.BQ_LUX_TITLE = "la luminosité (en Lux) lue";
+Blockly.Msg.BQ_LUX_TOOLTIP = 'Entrée Capteur de Luminosité (réf : LUMINOSITE)';
+Blockly.Msg.BQ_POT_TITLE = "la position du potentiomètre";
+Blockly.Msg.BQ_POT_TOOLTIP = 'Entrée potentiomètre (réf : POTENTIOMETRE';
+Blockly.Msg.BQ_IR_TITLE = "l'état du suiveur de ligne";
+Blockly.Msg.BQ_IR_TOOLTIP = 'Entrée Détecteur de ligne (réf : LIG1)';
+Blockly.Msg.BQ_BT_TITLE = "Bluetooth en mode esclave";
+Blockly.Msg.BQ_BT_TOOLTIP = 'Bluetooth V2.0+EDR esclave. Seulement 1 esclave par carte.';
+
+//added febr 7th 2016
+Blockly.Msg.lp2i_mp3_init = "Audio DFPlayer Mini MP3 Init";
+Blockly.Msg.lp2i_mp3_init_Pin_Rx = "Pin Rx =";
+Blockly.Msg.lp2i_mp3_init_Pin_Tx = "Pin Tx (not used) =";
+Blockly.Msg.lp2i_mp3_init_Pin_Busy = "Pin Busy =";
+Blockly.Msg.lp2i_mp3_init_Volume = "Volume (30 max) =";
+
+Blockly.Msg.lp2i_mp3 = "Audio DFPlayer Mini MP3";
+Blockly.Msg.lp2i_mp3_File = "mp3 file number to play =";
+Blockly.Msg.lp2i_mp3_Wait = "Waiting not busy to begin ? =";
+
+Blockly.Msg.lp2i_mp3_Volume = "Audio DFPlayer Mini MP3";
+Blockly.Msg.lp2i_mp3_Volume_Input = "Volume (30 max) =";
+
+Blockly.Msg.lp2i_u8g_draw_string = "OLED I2C display";
+Blockly.Msg.lp2i_u8g_draw_string_Text = "text to display =";
+Blockly.Msg.lp2i_u8g_draw_string_X = "raw x (127 max) =";
+Blockly.Msg.lp2i_u8g_draw_string_Y = "line y (63 max) =";
+
+Blockly.Msg.lp2i_u8g_draw_4strings = "OLED I2C display";
+Blockly.Msg.lp2i_u8g_draw_4strings_texts_to_display = "texts to display :";
+Blockly.Msg.lp2i_u8g_draw_4strings_Text_line1 = "line 1 =";
+Blockly.Msg.lp2i_u8g_draw_4strings_Text_line2 = "line 2 =";
+Blockly.Msg.lp2i_u8g_draw_4strings_Text_line3 = "line 3 =";
+Blockly.Msg.lp2i_u8g_draw_4strings_Text_line4 = "line 4 =";
+
+Blockly.Msg.lp2i_u8g_print = "OLED I2C display";
+Blockly.Msg.lp2i_u8g_print_N = "Number to display ="
+Blockly.Msg.lp2i_u8g_print_X = "raw x (127 max) =";
+Blockly.Msg.lp2i_u8g_print_Y = "line y (63 max) =";
+
+Blockly.Msg.lp2i_u8g_4draw_print = "OLED I2C display";
+Blockly.Msg.lp2i_u8g_4draw_print_to_display = "to display :";
+Blockly.Msg.lp2i_u8g_4draw_print_Text_line1 = "line 1 =";
+Blockly.Msg.lp2i_u8g_4draw_print_N1 = "Number 1 (at end) ="
+Blockly.Msg.lp2i_u8g_4draw_print_Text_line2 = "line 2 =";
+Blockly.Msg.lp2i_u8g_4draw_print_N2 = "Number 2 (at end) ="
+Blockly.Msg.lp2i_u8g_4draw_print_Text_line3 = "line 3 =";
+Blockly.Msg.lp2i_u8g_4draw_print_N3 = "Number 3 (at end) ="
+Blockly.Msg.lp2i_u8g_4draw_print_Text_line4 = "line 4 =";
+Blockly.Msg.lp2i_u8g_4draw_print_N4 = "Number 4 (at end) ="
+
+Blockly.Msg.lp2i_ledRGB_WS2812B_init = "Led RGB WS2812B Init";
+Blockly.Msg.lp2i_ledRGB_WS2812B_init_Pin = "Pin =";
+Blockly.Msg.lp2i_ledRGB_WS2812B_init_Number_of_Pixels = "Number of pixels =";
+Blockly.Msg.lp2i_ledRGB_WS2812B_DEFAULT_NAME = "RGB_LED";
+Blockly.Msg.lp2i_ledRGB_WS2812B_Brightness = "Brightness =";
+
+Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor = "Led RGB WS2812B. Send color :";
+Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor_Red = "Red (255 max) =";
+Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor_Green = "Green (255 max) =";
+Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor_Blue = "Blue (255 max) =";
+Blockly.Msg.lp2i_ledRGB_WS2812B_setPixelColor_Pixel_Number = "for pixel number (0 first) =";
+
+Blockly.Msg.LCD_SHIELD_PRINT_HELPURL = "http://www.dfrobot.com/wiki/index.php?title=Arduino_LCD_KeyPad_Shield_(SKU:_DFR0009)";
+Blockly.Msg.LCD_SHIELD_PRINT_TEXT = "LCD Keypad Shield screen";
+Blockly.Msg.LCD_SHIELD_PRINT_INPUT1 = "text on line 1";
+Blockly.Msg.LCD_SHIELD_PRINT_INPUT2 = "text on line 2";
+Blockly.Msg.LCD_SHIELD_PRINT_INPUT3 = "for (ms)";
+Blockly.Msg.LCD_SHIELD_PRINT_INPUT4 = "appui sur le bouton";
+Blockly.Msg.LCD_SHIELD_BTN_CHOICE = [["UP", "UP"], ["DOWN", "DOWN"], ["LEFT", "LEFT"], ["RIGHT", "RIGHT"], ["SELECT", "SELECT"]];
+Blockly.Msg.LCD_SHIELD_PRINT_TOOLTIP = "print text on LCD screen, 2 lines x 16 caracters";
+
+//SHIELD ADAFRUIT
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_MOTOR1 = "v1 - Motor DC";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_MOTOR2 = "v2 - Motor DC";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_MOTOR_DIRECTION = "Direction";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_MOTOR_VITESSE = "Speed [0-255]";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_AVANT = "Forward";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_ARRIERE = "Backward";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_STOP = "Stop";
+
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_PAP1 = "v1 - Stepper Motor";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_PAP2 = "v2 - Stepper Motor";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_CONNECT = "Connect to";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_MOTOR_PPT = "Step";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_MOTOR_RPM = "Speed(RPM)";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_MOTOR_NB_PAS = "Move to Step";
+
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_JOY1_MOT1 = "v1 - Joystick + motors";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_JOY_MOT2 = "v2 - Joystick + motors";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_JOY1 = "v1 - Joystick";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_JOY2 = "v2 - Joystick";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_ENTREE_X = "Connection(x)";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_ENTREE_Y = "Connection(y)";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_NEUTRE = "Neutral zone [0-255]";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_MOTORDC1 = "Motor DC 1";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_MOTORDC2 = "Motor DC 2";
+
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_VARIABLES = "Variables : x = retX - y = retY";
+Blockly.Msg.ADAFRUIT_MOTORSHIELD_VARIABLES2 = "Neutre+ = neut - Neutre- = neutn";
+
+//SHIELD MULTIFUNCTION
+Blockly.Msg.multifunction_buildin_led_INPUT = "mettre la DEL intégrée";
+Blockly.Msg.multifunction_buildin_led_STAT = "à l'état";
+Blockly.Msg.multifunction_buildin_led_TOOLTIP = "allumer ou éteindre 1 des 4 DEL intégrées";
+Blockly.Msg.multifunction_digital_read_INPUT = "état logique du bouton poussoir";
+Blockly.Msg.multifunction_digital_read_TOOLTIP = "détecte l'état des BP intégrés";
+Blockly.Msg.multifunction_pot_read_INPUT = "la valeur analogique du potentiomètre";
+Blockly.Msg.multifunction_pot_read_TOOLTIP = "lis la valeur de la résistance ajustable";
+Blockly.Msg.multifunction_analog_read_INPUT = "la valeur lue sur le port analogique A5";
+Blockly.Msg.multifunction_analog_read_TOOLTIP = "seul A5 est disponible";
+Blockly.Msg.multifunction_PWM_write_OUTPUT = "envoyer sur la sortie PWM~";
+Blockly.Msg.multifunction_PWM_write_ANGLE = "la valeur";
+Blockly.Msg.multifunction_PWM_write_TOOLTIP = "sortie numérique ou 'analogique' PWM";
+Blockly.Msg.multifunction_tone_INPUT1 = "émettre un son sur le buzzer";
+Blockly.Msg.multifunction_tone_INPUT2 = "d'une fréquence (Hz)";
+Blockly.Msg.multifunction_tone_INPUT3 = "pendant une durée (ms) de";
+Blockly.Msg.multifunction_tone_TOOLTIP = "buzzer connecté sur la sortie Numérique D";
+Blockly.Msg.multifunction_notone_INPUT = "stopper le son sur la broche";
+Blockly.Msg.multifunction_notone_TOOLTIP = "mets la buzzer à 0";
+Blockly.Msg.multifunction_segment_TEXT = "afficher le nombre";
+Blockly.Msg.multifunction_segment_INPUT1 = "1er chiffre";
+Blockly.Msg.multifunction_segment_INPUT2 = "2ème chiffre";
+Blockly.Msg.multifunction_segment_INPUT3 = "3ème chiffre";
+Blockly.Msg.multifunction_segment_INPUT4 = "4ème chiffre";
+Blockly.Msg.multifunction_segment_TOOLTIP = "afficher 4 chifres sur les 7 segments";
+
+// Module RF433 (Added August 23th 2018)
+Blockly.Msg.RF433_rxready_TEXT = "Message Ready";
+Blockly.Msg.RF433_rxready_INPUT = "Input Pin";
+Blockly.Msg.RF433_rxready_TOOLTIP = "Lets you know whether or not a message is received by the radio receiver";
+Blockly.Msg.RF433_rx_TEXT = "Receive Char";
+Blockly.Msg.RF433_rx_INPUT = "Input Pin";
+Blockly.Msg.RF433_rx_TOOLTIP = "Permet d'obtenir le contenu du message reçu par le récepteur radio";
+Blockly.Msg.RF433_tx_TEXT = "Send Message";
+Blockly.Msg.RF433_tx_INPUT1 = "Output Pin";
+Blockly.Msg.RF433_tx_INPUT2 = "Message";
+Blockly.Msg.RF433_tx_TOOLTIP = "Send a message using the radio transmitter";
+Blockly.Msg.RF433_init_receiver_TEXT = "Initialize the radio receiver";
+Blockly.Msg.RF433_init_receiver_INPUT = "PIN";
+Blockly.Msg.RF433_init_receiver_TOOLTIP = "Initializes the RF433 radio receiver";
+Blockly.Msg.RF433_init_transmitter_TEXT = "Initialize the radio transmitter";
+Blockly.Msg.RF433_init_transmitter_INPUT = "PIN";
+Blockly.Msg.RF433_init_transmitter_TOOLTIP = "Initializes the RF433 radio transmitter";
+Blockly.Msg.RF433_define_message_TEXT = "Define the message to send";
+Blockly.Msg.RF433_define_message_INPUT = "Message";
+Blockly.Msg.RF433_define_message_TOOLTIP = "Allows you to define the message you wish to send using the radio transmitter";
+Blockly.Msg.RF433_send_message_full_TEXT = "Send a message";
+Blockly.Msg.RF433_send_message_full_INPUT = "Message";
+Blockly.Msg.RF433_send_message_full_TOOLTIP = "Send a message using the radio transmitter";
+Blockly.Msg.RF433_show_message_TEXT = "Display the received message";
+Blockly.Msg.RF433_show_message_TOOLTIP = "Displays the received message using the radio receiver in the Arduino monitor";
+Blockly.Msg.RF433_send_message_TEXT = "Send the message";
+Blockly.Msg.RF433_send_message_TOOLTIP = "Send the previously defined message using the radio transmitter";
+Blockly.Msg.RF433_wait_rx_TEXT = "Wait for the message";
+Blockly.Msg.RF433_wait_rx_TOOLTIP = "Put the radio receiver in the waiting position of a message";
+Blockly.Msg.RF433_wait_tx_TEXT = "Waiting for the message to finish";
+Blockly.Msg.RF433_wait_tx_TOOLTIP = "Lets wait the necessary time to the radio transmitter to send the complete message";
+Blockly.Msg.RF433_reception_message_TEXT = "Receiving message";
+Blockly.Msg.RF433_reception_message_TOOLTIP = "Lets you know whether or not a message is received by the radio receiver";
+Blockly.Msg.RF433_receive_message_TEXT = "message received";
+Blockly.Msg.RF433_receive_message_TOOLTIP = "Obtain the contents of the message received by the radio receiver";
+
+// Module RFID (Added April 13th 2017)
+Blockly.Msg.RFID_module_TEXT = "Initialize RFID module";
+Blockly.Msg.RFID_module_INPUT1 = "SDA";
+Blockly.Msg.RFID_module_INPUT2 = "SCK";
+Blockly.Msg.RFID_module_INPUT3 = "MOSI";
+Blockly.Msg.RFID_module_INPUT4 = "MISO";
+Blockly.Msg.RFID_module_INPUT5 = "RST";
+Blockly.Msg.RFID_module_TOOLTIP = "Used to initialize the connection between the RFID module and the arduino board";
+Blockly.Msg.RFID_detection_TEXT = "Detecting a card or badge";
+Blockly.Msg.RFID_detection_TOOLTIP = "Whether or not a card (or badge) is presented in front of our RFID module. If so, a connection is opened between the 2.";
+Blockly.Msg.RFID_reception_cle_TEXT = "Information sent by card or badge";
+Blockly.Msg.RFID_reception_cle_TOOLTIP = "Tell if information is sent to RFID, or not";
+Blockly.Msg.RFID_lecture_cle_TEXT = "information send by RFID tag";
+Blockly.Msg.RFID_lecture_cle_TOOLTIP = "Whether or not information is sent to our RFID module";
+Blockly.Msg.RFID_fermeture_TEXT = "Closing the Open RFID Connection";
+Blockly.Msg.RFID_fermeture_TOOLTIP = "Allows you to close the open connection between the RFID module and the card (or badge).";
+Blockly.Msg.RFID_valeur_cle_TEXT = "Value of the information sent by the RFID tag";
+Blockly.Msg.RFID_valeur_cle_TOOLTIP = "Enables us to know the value of the information sent to our RFID module";
+Blockly.Msg.RFID_code_acces_TEXT = "Initialize the access code";
+Blockly.Msg.RFID_code_acces_INPUT1 = "Value 1";
+Blockly.Msg.RFID_code_acces_INPUT2 = "Value 2";
+Blockly.Msg.RFID_code_acces_INPUT3 = "Value 3";
+Blockly.Msg.RFID_code_acces_INPUT4 = "Value 4";
+Blockly.Msg.RFID_code_acces_INPUT5 = "Value 5";
+Blockly.Msg.RFID_code_acces_TOOLTIP = "Allows you to set the authorized access code";
+Blockly.Msg.RFID_acces_autorise_TEXT = "Authorized access code";
+Blockly.Msg.RFID_acces_autorise_TOOLTIP = "Whether or not the access code received by the RFID module matches the one that has been defined.";
+
+//Added March 18th 2016
+Blockly.Msg.ROBUNO_INOUT_LED_INPUT1 = "mettre la DEL Rouge";
+Blockly.Msg.ROBUNO_INOUT_LED_INPUT2 = "sur la broche Numérique";
+Blockly.Msg.ROBUNO_INOUT_LED_INPUT3 = "à l'état";
+Blockly.Msg.ROBUNO_LED1_TOOLTIP = "Sortie led (réf : LED)";
+Blockly.Msg.ROBUNO_INOUT_LED_INPUT4 = "mettre la DEL Blanche";
+Blockly.Msg.ROBUNO_TEXT1 = "déclencher l'alarme collision";
+Blockly.Msg.ROBUNO_TEXT2 = "d'une fréquence (Hz)";
+Blockly.Msg.ROBUNO_TEXT3 = "pendant une durée (ms) ";
+Blockly.Msg.ROBUNO_BUZZER1_TOOLTIP = "Sortie Buzzer (réf : BUZZER)";
+Blockly.Msg.ROBUNO_SERVO2_TITLEA = "faire tourner le servomoteur de gauche";
+Blockly.Msg.ROBUNO_SERVO2_TITLEB = "vers l'Avant (VRAI) ou Arrière (FAUX)";
+Blockly.Msg.ROBUNO_SERVO2_TITLEC = "à la vitesse angulaire [0 ~ 180 degrés]";
+Blockly.Msg.ROBUNO_SERVO2_TITLED = "faire tourner le servomoteur de droite";
+Blockly.Msg.ROBUNO_SERVO2_TOOLTIP = "rotation possible entre 0~180 degrés : 0~90 puissance variable dans un sens ; 90~180 puissance variable dans l'autre sens";
+Blockly.Msg.ROBUNO_PIN_PWM = "sur la broche PWM~";
+Blockly.Msg.ROBUNO_TEXT4 = "le capteur de collision Gauche";
+Blockly.Msg.ROBUNO_TEXT5 = "sur la broche ";
+Blockly.Msg.ROBUNO_TEXT6 = " est appuyé ?";
+Blockly.Msg.ROBUNO_TEXT7 = "Entrée Capteur de collision (réf : Gauche ou Droite)";
+Blockly.Msg.ROBUNO_TEXT8 = "le capteur de collision Droite";
+Blockly.Msg.ROBUNO_TEXT9 = "control motor #";
+Blockly.Msg.ROBUNO_TEXT10 = "on shield";
+Blockly.Msg.ROBUNO_TEXT11 = "sur les broches";
+Blockly.Msg.ROBUNO_TEXT12 = "broche de commande de Direction (DIR)";
+Blockly.Msg.ROBUNO_TEXT13 = "broche de commande de la Vitesse (PWM~)";
+Blockly.Msg.ROBUNO_TEXT14 = "sens?";
+Blockly.Msg.ROBUNO_TEXT15 = "speed MAX (255) or stop (0)";
+Blockly.Msg.ROBUNO_TEXT16 = "Carte de commande de deux moteurs CC";
+
+Blockly.Msg.ROBUNO_LUX_TITLE1 = "la luminosité lue sur la LDR Gauche";
+Blockly.Msg.ROBUNO_LUX_TITLE2 = "la luminosité lue sur la LDR Droite";
+Blockly.Msg.ROBUNO_LUX_TOOLTIP = "entrée Capteur de Luminosité";
+Blockly.Msg.ROBUNO_PIN_ANALOG = "sur la broche Analogique";
+Blockly.Msg.ROBUNO_HELPURL = "www.technologieservices.fr/fr/a-a1000022060-edc1000003/article/RUSA-Robot-RobUno-a-servomoteurs.html";
+
+//******** Added March 26th 2016
+Blockly.Msg.FISCHERTECHNIK_INOUT_LED_INPUT1 = "mettre le feu rouge";
+Blockly.Msg.FISCHERTECHNIK_INOUT_LED_INPUT2 = "sur la broche Numérique";
+Blockly.Msg.FISCHERTECHNIK_INOUT_LED_INPUT3 = "à l'état";
+Blockly.Msg.FISCHERTECHNIK_INOUT_LED_INPUT4 = "mettre le feu orange";
+Blockly.Msg.FISCHERTECHNIK_INOUT_LED_INPUT5 = "mettre le feu vert";
+Blockly.Msg.FISCHERTECHNIK_INOUT_LED_INPUT6 = "mettre la barriere lumineuse";
+Blockly.Msg.FISCHERTECHNIK_LED1_TOOLTIP = "Sortie led (réf : LED)";
+Blockly.Msg.FISCHERTECHNIK_TEXT1 = "allumer le buzzer";
+Blockly.Msg.FISCHERTECHNIK_TEXT2 = "à une fréquence (Hz)";
+Blockly.Msg.FISCHERTECHNIK_TEXT3 = "pendant une durée (ms) ";
+Blockly.Msg.FISCHERTECHNIK_TEXT4 = "le BP ou capteur de position de la barrière";
+Blockly.Msg.FISCHERTECHNIK_TEXT5 = "sur la broche ";
+Blockly.Msg.FISCHERTECHNIK_TEXT6 = " détecte du metal ?";
+Blockly.Msg.FISCHERTECHNIK_TEXT7 = "Entrée capteur magnétique (réf : ILS)";
+Blockly.Msg.FISCHERTECHNIK_TEXT8 = "le capteur magnétique";
+
+Blockly.Msg.FISCHERTECHNIK_BUZZER1_TOOLTIP = "Sortie Buzzer (réf : BUZZER)";
+Blockly.Msg.FISCHERTECHNIK_PIN = "sur la broche";
+Blockly.Msg.FISCHERTECHNIK_LUX_TITLE1 = "la luminosité lue sur le capteur de lumière";
+Blockly.Msg.FISCHERTECHNIK_LUX_TOOLTIP = "Entrée capteur de Luminosité";
+Blockly.Msg.FISCHERTECHNIK_PIN_ANALOG = "sur la broche Analogique";
+
+Blockly.Msg.FISCHERTECHNIK_TEXT9 = "commande le moteur";
+Blockly.Msg.FISCHERTECHNIK_TEXT10 = "du shield Moteurs CC";
+Blockly.Msg.FISCHERTECHNIK_TEXT11 = "sur les broches";
+Blockly.Msg.FISCHERTECHNIK_TEXT12 = "broche de commande de Direction (DIR)";
+Blockly.Msg.FISCHERTECHNIK_TEXT13 = "broche de commande de la Vitesse (PWM~)";
+Blockly.Msg.FISCHERTECHNIK_TEXT14 = "sens horaire (255) ou Antihoraire (0)?";
+Blockly.Msg.FISCHERTECHNIK_TEXT15 = "vitesse MAX (VRAI) ou nulle (FAUX)";
+Blockly.Msg.FISCHERTECHNIK_TEXT16 = "Carte de commande de deux moteurs CC";
+Blockly.Msg.FISCHERTECHNIK_TEXT17 = " est appuyée ?";
+
+//******** Added April 19th 2016
+Blockly.Msg.MBOT_HELPURL = "http://www.makeblock.cc/mbot/";
+Blockly.Msg.MBOT_FORWARD_TOOLTIP = "avance";
+Blockly.Msg.MBOT_BACKWARD_TOOLTIP = "recule";
+Blockly.Msg.MBOT_TURN_LEFT_TOOLTIP = "tourne à gauche";
+Blockly.Msg.MBOT_TURN_RIGHT_TOOLTIP = "tourne à droite";
+Blockly.Msg.MBOT_MOTOR_TOOLTIP = "gestion individuelle des moteurs";
+Blockly.Msg.MBOT_MOTOR_TITLE = "vers l'avant (1) ou arrière (0)";
+Blockly.Msg.MBOT_MOTOR_LEFT_TITLE = "moteur à gauche : puissance";
+Blockly.Msg.MBOT_MOTOR_RIGHT_TITLE = "moteur à droite : puissance";
+Blockly.Msg.MBOT_MOTOR_SENS = "1 : avancer | 0 : reculer";
+Blockly.Msg.MBOT_MOTOR_LEFT_SENS = "moteur gauche : sens";
+Blockly.Msg.MBOT_MOTOR_LEFT_SENS_PIN = "moteur gauche : activer sens (broche 7)";
+Blockly.Msg.MBOT_MOTOR_LEFT_SENS_CHANGE = "moteur gauche : sens";
+Blockly.Msg.MBOT_MOTOR_LEFT_PWM = "moteur gauche : puissance";
+Blockly.Msg.MBOT_MOTOR_LEFT_PWM_PIN = "moteur gauche : activer PWM (broche 6)";
+Blockly.Msg.MBOT_MOTOR_LEFT_PWM_CHANGE = "moteur gauche : puissance";
+Blockly.Msg.MBOT_MOTOR_RIGHT_SENS = "moteur droit : sens";
+Blockly.Msg.MBOT_MOTOR_RIGHT_SENS_PIN = "moteur droit : activer sens (broche 4)";
+Blockly.Msg.MBOT_MOTOR_RIGHT_SENS_CHANGE = "moteur droit : sens";
+Blockly.Msg.MBOT_MOTOR_RIGHT_PWM = "moteur droit : puissance";
+Blockly.Msg.MBOT_MOTOR_RIGHT_PWM_PIN = "moteur droit : activer PWM (broche 5)";
+Blockly.Msg.MBOT_MOTOR_RIGHT_PWM_CHANGE = "moteur droit : puissance";
+Blockly.Msg.MBOT_RGB_ONBOARD_INTRO = "colore onboard RGB LEDs ";
+Blockly.Msg.MBOT_RGB_ONBOARD_RED = "red (255 max) =";
+Blockly.Msg.MBOT_RGB_ONBOARD_BLUE = "blue (255 max) =";
+Blockly.Msg.MBOT_RGB_ONBOARD_GREEN = "green (255 max) =";
+Blockly.Msg.MBOT_RGB_ONBOARD_PIXEL_NUMBER = "choice ";
+Blockly.Msg.MBOT_RGB_ONBOARD_FIELDDROPDOWN = [["0 (les deux leds)", "0"], ["1 (led gauche)", 1], ["2 (led droite)", 2]];
+Blockly.Msg.MBOT_BUZZER_INTRO = "jouer un son";
+Blockly.Msg.MBOT_BUZZER_TONE = "note";
+Blockly.Msg.MBOT_BUZZER_FIELDDROPDOWN_TONE = [["A", "27.5"], ["B", "30.868"], ["C", "16.352"], ["D", "18.354"], ["E", "20.602"], ["F", "21.827"], ["G", "24.5"]];
+Blockly.Msg.MBOT_BUZZER_OCTAVE = "#";
+Blockly.Msg.MBOT_BUZZER_FIELDDROPDOWN_OCTAVE = [["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"], ["6", "6"], ["7", "7"], ["8", "8"]];
+Blockly.Msg.MBOT_BUZZER_DELAY = "during";
+Blockly.Msg.MBOT_BUZZER_FIELDDROPDOWN_DELAY = [["un demi", "500"], ["un quart", "250"], ["un huitième", "125"], ["tout", "1000"], ["double", "2000"], ["zéro", "0"]];
+
+//NBR added on 2017-04-05
+Blockly.Msg.MBOT_PORT_CHOICE = [["Port 1", "PORT_1"],  ["Port 2", "PORT_2"],  ["Port 3", "PORT_3"],  ["Port 4", "PORT_4"],  ["Port 5", "PORT_5"],  ["Port 6", "PORT_6"],  ["Port 7", "PORT_7"],  ["Port 8", "PORT_8"]];
+
+Blockly.Msg.MBOT_INOUT_LINE_HELPURL = "http://learn.makeblock.com/en/me-line-follower/";
+Blockly.Msg.MBOT_INOUT_LINE_TEXT = "Line Finder";
+Blockly.Msg.MBOT_INOUT_LINE_INPUT = "on";
+Blockly.Msg.MBOT_INOUT_LINE_TOOLTIP = "Output digital signals so the robot can reliably follow a black line on a white background";
+
+Blockly.Msg.MBOT_INOUT_ULTRASONIC_HELPURL = "http://learn.makeblock.com/en/me-ultrasonic-sensor/";
+Blockly.Msg.MBOT_INOUT_ULTRASONIC_TEXT = "Ultrasonic Ranger";
+Blockly.Msg.MBOT_INOUT_ULTRASONIC_INPUT = "on";
+Blockly.Msg.MBOT_INOUT_ULTRASONIC_UNIT = "unit";
+Blockly.Msg.MBOT_INOUT_ULTRASONIC_UNIT_CHOICE = [["cm", "cm"],  ["inch", "inch"]];
+Blockly.Msg.MBOT_INOUT_ULTRASONIC_TOOLTIP = "Non-contact distance measurement module";
+
+Blockly.Msg.MBOT_IR_PORT_CHOICE = [["Internal", "0"],  ["Port 1", "PORT_1"],  ["Port 2", "PORT_2"],  ["Port 3", "PORT_3"],  ["Port 4", "PORT_4"],  ["Port 5", "PORT_5"],  ["Port 6", "PORT_6"],  ["Port 7", "PORT_7"],  ["Port 8", "PORT_8"]];
+Blockly.Msg.MBOT_RECEPTEUR_IR_HELPURL = "http://wiki.seeed.cc/Grove-Infrared_Receiver/";
+Blockly.Msg.MBOT_RECEPTEUR_IR_TEXT = "IR Receiver";
+Blockly.Msg.MBOT_RECEPTEUR_IR_INPUT = "on";
+Blockly.Msg.MBOT_RECEPTEUR_IR_TOOLTIP = "input numeric";
+
+//******** Added May 1rst 2016
+Blockly.Msg.ROMEO_HELPURL = "http://www.dfrobot.com/wiki/index.php/Romeo_V2-All_in_one_Controller_%28R3%29_%28SKU:DFR0225%29";
+Blockly.Msg.ROMEO3_MOTOR1_SENS = "motor M1 : direction";
+Blockly.Msg.ROMEO3_MOTOR2_SENS = "motor M2 : direction";
+Blockly.Msg.ROMEO3_MOTOR_SENS = "1 : forward | 0 : backward";
+Blockly.Msg.ROMEO3_MOTOR1_PWM = "motor M1 : PWM (0~255)";
+Blockly.Msg.ROMEO3_MOTOR2_PWM = "motor M2 : PWM (0~255)";
+Blockly.Msg.ROMEO3_MOTOR_TOOLTIP = "motor control individually";
+Blockly.Msg.ROMEO3_SWITCH = "press button";
+Blockly.Msg.ROMEO_SWITCH_FIELDDROPDOWN = [["S1", "0"], ["S2", "147"], ["S3", "333"], ["S4", "510"], ["S5", "745"], ["aucun", "1023"]];
+Blockly.Msg.ROMEO3_SWITCH_TOOLTIP = "Bware of switch ! Verify analog read on A0 : 0 for S1, 147 for S2, 333 for S3, 510 for S4, 745 for S5, 1023 if none";
+
+//Added september 16th 2017
+Blockly.Msg.VITESSE_ROTATION_HELPURL = "on going redaction";
+Blockly.Msg.VITESSE_ROTATION_TEXT = "the rotational speed ";
+Blockly.Msg.VITESSE_ROTATION_INPUT = "of the cups (revolutions/minute) on the spindle n°";
+Blockly.Msg.VITESSE_ROTATION_TOOLTIP = "Measurement of the rotation speed of the cups (with a reed switch) in revolutions per minute (rpm) every 5 seconds";
+
+Blockly.Msg.VITESSE_VENTMS_HELPURL = "on going redaction";
+Blockly.Msg.VITESSE_VENTMS_TEXT = "Measuring wind speed (in m/s)";
+Blockly.Msg.VITESSE_VENTMS_INPUT = "Sensor connected to the spindle n°";
+Blockly.Msg.VITESSE_VENTMS_RAYON = "Radius of the anemometer arms (in cm)";
+Blockly.Msg.VITESSE_VENTMS_COEFF = "Calibration coefficient ";
+Blockly.Msg.VITESSE_VENTMS_TOOLTIP = "Measurement of wind speed (with a reed switch) in meter per second (m/s) every 5 seconds";
+
+Blockly.Msg.VITESSE_VENTKMH_HELPURL = "on going redaction";
+Blockly.Msg.VITESSE_VENTKMH_TEXT = "Measuring wind speed (in km/h)";
+Blockly.Msg.VITESSE_VENTKMH_INPUT = "Sensor connected to the spindle n°";
+Blockly.Msg.VITESSE_VENTKMH_RAYON = "Radius of the anemometer arms (in cm)";
+Blockly.Msg.VITESSE_VENTKMH_COEFF = "Calibration coefficient ";
+Blockly.Msg.VITESSE_VENTKMH_TOOLTIP = "Measurement of wind speed (with a reed switch) in kilometers per hour (km/h) every 5 seconds";
+
+Blockly.Msg.VITESSE_VENTNOEUD_HELPURL = "on going redaction";
+Blockly.Msg.VITESSE_VENTNOEUD_TEXT = "Measuring wind speed (in knot)";
+Blockly.Msg.VITESSE_VENTNOEUD_INPUT = "Sensor connected to the spindle n°";
+Blockly.Msg.VITESSE_VENTNOEUD_RAYON = "Radius of the anemometer arms (in cm)";
+Blockly.Msg.VITESSE_VENTNOEUD_COEFF = "Calibration coefficient ";
+Blockly.Msg.VITESSE_VENTNOEUD_TOOLTIP = "Measurement of wind speed (with a reed switch) in knot every 5 seconds";
+
+Blockly.Msg.FORCE_BEAUFORT_HELPURL = "on going redaction";
+Blockly.Msg.FORCE_BEAUFORT_TEXT1 = "Wind force measurement in Beaufort";
+Blockly.Msg.FORCE_BEAUFORT_TEXT2= "the measurement sends an integer from 0 to 12";
+Blockly.Msg.FORCE_BEAUFORT_INPUT = "Sensor connected to the spindle n°";
+Blockly.Msg.FORCE_BEAUFORT_RAYON = "Radius of the anemometer arms (in cm)";
+Blockly.Msg.FORCE_BEAUFORT_COEFF = "Calibration coefficient ";
+Blockly.Msg.FORCE_BEAUFORT_TOOLTIP = "Wind force measurement (with a reed switch) in Beaufort Degree every 5 seconds";
+
+//******** Added august 20th 2016
+Blockly.Msg.FLYCAM_SWITCH_HELPURL = "http://tic.technologiescollege.fr/wiki/doku.php/fr/arduino/flycam";
+Blockly.Msg.FLYCAM_SWITCH_TEXT = "change mode";
+Blockly.Msg.FLYCAM_SWITCH_INPUT = "of Flycam on PIN#";
+Blockly.Msg.FLYCAM_SWITCH_TOOLTIP = "be patient because it sends a signal during 3s and a wait of 1s";
+Blockly.Msg.FLYCAM_RECORD_HELPURL = Blockly.Msg.FLYCAM_SWITCH_HELPURL;
+Blockly.Msg.FLYCAM_RECORD_TEXT = "start capture";
+Blockly.Msg.FLYCAM_RECORD_INPUT = Blockly.Msg.FLYCAM_SWITCH_INPUT;
+Blockly.Msg.FLYCAM_RECORD_TOOLTIP = "send order for 1s, like a servo=180°";
+Blockly.Msg.FLYCAM_STOP_HELPURL = Blockly.Msg.FLYCAM_SWITCH_HELPURL;
+Blockly.Msg.FLYCAM_STOP_TEXT = "stop capture";
+Blockly.Msg.FLYCAM_STOP_INPUT = Blockly.Msg.FLYCAM_SWITCH_INPUT;
+Blockly.Msg.FLYCAM_STOP_TOOLTIP = "send order for 1s, like a servo=0°";
+
+//******** Added august 23th 2016
+Blockly.Msg.MHK_ULTRASON_HELPURL = "http://www.gotronic.fr/art-module-de-detection-us-hc-sr04-20912.htm";
+Blockly.Msg.MHK_ULTRASON1 = "distance measured in cm ";
+Blockly.Msg.MHK_ULTRASON2 = "TRIG on the PIN ";
+Blockly.Msg.MHK_ULTRASON3 = "ECHO on the PIN ";
+Blockly.Msg.MHK_ULTRASON_TOOLTIP = "detect obstacle, measure distance with ultrasonic ranger";
+Blockly.Msg.MHK_MOTEUR_VIBREUR_HELPURL = "http://www.gotronic.fr/art-vibreur-miniature-vm1201-20685.htm";
+Blockly.Msg.MHK_MOTEUR_VIBREUR1 = "vibrate the motor on the PIN";
+Blockly.Msg.MHK_MOTEUR_VIBREUR2 = " with value";
+Blockly.Msg.MHK_CAPTEUR_MYOWARE_HELPURL = "http://www.robotshop.com/eu/fr/capteur-electrique-muscle-myoware.html";
+Blockly.Msg.MHK_CAPTEUR_MYOWARE1 = "the value read by the sensor myoware ";
+Blockly.Msg.MHK_CAPTEUR_MYOWARE2 = "on analog pin ";
+Blockly.Msg.MHK_CAPTEUR_MYOWARE_TOOLTIP = "vibrator motor output";
+Blockly.Msg.MHK_SERVO_MOTEUR1 = "rotate servo";
+Blockly.Msg.MHK_SERVO_MOTEUR2 = "on PIN#";
+Blockly.Msg.MHK_SERVO_MOTEUR3 = "at angle [0~180°]";
+Blockly.Msg.MHK_SERVO_MOTEUR_TOOLTIP = "Servo-motor (réf : MINI-SERVO)";
+
+// added august 28th 2016
+// blocks from Ardublockly project
+
+Blockly.Msg.SPI_SETUP = "Setup";
+Blockly.Msg.SPI_SETUP_CONF = "configuration:";
+Blockly.Msg.SPI_SETUP_DIVIDE = "clock divide";
+Blockly.Msg.SPI_SETUP_LSBFIRST = "LSBFIRST";
+Blockly.Msg.SPI_SETUP_MODE = "SPI mode (idle - edge)";
+Blockly.Msg.SPI_SETUP_MODE0 = "0 (Low - Falling)";
+Blockly.Msg.SPI_SETUP_MODE1 = "1 (Low - Rising)";
+Blockly.Msg.SPI_SETUP_MODE2 = "2 (High - Falling)";
+Blockly.Msg.SPI_SETUP_MODE3 = "3 (High - Rising)";
+Blockly.Msg.SPI_SETUP_MSBFIRST = "MSBFIRST";
+Blockly.Msg.SPI_SETUP_SHIFT = "data shift";
+Blockly.Msg.SPI_SETUP_TIP = "Configures the SPI peripheral.";
+Blockly.Msg.SPI_TRANSRETURN_TIP = "Send a SPI message to an specified slave device and get data back.";
+Blockly.Msg.SPI_TRANS_NONE = "none";
+Blockly.Msg.SPI_TRANS_SLAVE = "to slave pin";
+Blockly.Msg.SPI_TRANS_TIP = "Send a SPI message to an specified slave device.";
+Blockly.Msg.SPI_TRANS_VAL = "transfer";
+Blockly.Msg.SPI_TRANS_WARN1 = "A setup block for %1 must be added to the workspace to use this block!";
+Blockly.Msg.SPI_TRANS_WARN2 = "Old pin value %1 is no longer available.";
+
+Blockly.Msg.STEPPER_DEFAULT_NAME = "MyStepperMotor";
+Blockly.Msg.STEPPER_MOTOR = "stepper motor:";
+Blockly.Msg.STEPPER_PIN1 = "pin1#";
+Blockly.Msg.STEPPER_PIN2 = "pin2#";
+Blockly.Msg.STEPPER_REVOLVS = "how many steps per revolution";
+Blockly.Msg.STEPPER_SETUP = "Setup";
+Blockly.Msg.STEPPER_SETUP_TIP = "Configures a stepper motor pinout and other settings.";
+Blockly.Msg.STEPPER_SPEED = "set speed (rpm) to";
+Blockly.Msg.STEPPER_STEP = "move stepper";
+Blockly.Msg.STEPPER_STEPS = "steps";
+Blockly.Msg.STEPPER_STEP_TIP = "Turns the stepper motor a specific number of steps.";
+Blockly.Msg.STEPPER_STEP_WARN1 = "A STEPPER configuration block must be added to use this block!";
+Blockly.Msg.STEPPER_STEP_WARN2 = "A Name input must be added to the Stepper configuration block!";
+Blockly.Msg.STEPPER_STEP_WARN3 = "Selected stepper does not exist any more, please select a new one.";

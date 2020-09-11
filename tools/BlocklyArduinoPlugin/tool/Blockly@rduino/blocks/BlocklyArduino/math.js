@@ -12,10 +12,10 @@ Blockly.Blocks.inout_angle_maths = {
     this.setColour(Blockly.Blocks.math.HUE);
 	this.setHelpUrl('https://developers.google.com/blockly/custom-blocks/defining-blocks#appendfield');
     this.appendDummyInput("")
-        .appendField("angle")
+        .appendField("úhel")
         .appendField(new Blockly.FieldAngle("90"), "ANGLE");
     this.setOutput(true, "Number");
-    this.setTooltip('angle °');
+    this.setTooltip('úhel °');
   }
 };
 

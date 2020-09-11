@@ -7,19 +7,19 @@ goog.provide('Blockly.Blocks.Adafruit_SSD1306');
 goog.require('Blockly.Blocks');
 goog.require('Blockly.Types');
 
-Blockly.Msg.SSD1306_WIDTH = "width, in pixels";
-Blockly.Msg.SSD1306_HEIGHT = "height, in pixels";
-Blockly.Msg.SSD1306_OLED_RESET = "Reset pin";
-Blockly.Msg.SSD1306_I2C_ADDRESS = "I2C address";
-Blockly.Msg.SSD1306_OLED_RESET_NOT_USED = "-1 (not used)";
+Blockly.Msg.SSD1306_WIDTH = "šířka v pixelech";
+Blockly.Msg.SSD1306_HEIGHT = "výška v pixelech";
+Blockly.Msg.SSD1306_OLED_RESET = "reset pin";
+Blockly.Msg.SSD1306_I2C_ADDRESS = "I2C addresa";
+Blockly.Msg.SSD1306_OLED_RESET_NOT_USED = "-1 (nepouzito)";
 
 Blockly.Msg.SSD1306_INIT_WIDTH_DROPDOWN = [["128","128"],["64","64"]];
 Blockly.Msg.SSD1306_INIT_HEIGHT_DROPDOWN = [["64","64"],["32","32"]];
 Blockly.Msg.SSD1306_INIT_OLED_RESET_DROPDOWN = [[Blockly.Msg.SSD1306_OLED_RESET_NOT_USED,"-1"],["4","4"]];
 //Blockly.Msg.SSD1306_INIT_TOOLTIP
 
-Blockly.Msg.SSD1306_INIT_NAME = 'Initialise OLED display';
-Blockly.Msg.SSD1306_INIT_TOOLTIP = 'Initialise OLED';
+Blockly.Msg.SSD1306_INIT_NAME = 'Inicializovat OLED';
+Blockly.Msg.SSD1306_INIT_TOOLTIP = 'Initializace OLED';
 
 Blockly.Blocks.SSD1306_HUE = "190";
 
@@ -48,14 +48,14 @@ Blockly.Blocks['SSD1306_init'] = {
 	  	.appendField(Blockly.Msg.SSD1306_I2C_ADDRESS)
                 .appendField(new Blockly.FieldNumber(0x3C, Blockly.Blocks.math_number.validator), "I2C_ADDRESS");
 	//  	.setConstraints(8,0x77,1);
-	this.setOutput(true, 'Number');
+	//this.setOutput(true, 'Number');
 	this.setPreviousStatement(true, null);
 	this.setNextStatement(true, null);
 //	this.setTooltip(Blockly.Msg.SSD1306_INIT_TOOLTIP);
   }
 };
 
-Blockly.Msg.SSD1306_DISPLAY_NAME = 'refresh display';
+Blockly.Msg.SSD1306_DISPLAY_NAME = 'Překreslit displej';
 
 Blockly.Blocks['SSD1306_display'] = {
         init: function() {
@@ -68,7 +68,7 @@ Blockly.Blocks['SSD1306_display'] = {
 	}
 };
 
-Blockly.Msg.SSD1306_CLEARDISPLAY_NAME = 'clear display';
+Blockly.Msg.SSD1306_CLEARDISPLAY_NAME = 'Vymazat displej';
 
 Blockly.Blocks['SSD1306_clearDisplay'] = {
 	init: function() {
@@ -81,8 +81,8 @@ Blockly.Blocks['SSD1306_clearDisplay'] = {
         }
 };
 
-Blockly.Msg.SSD1306_INVERTDISPLAY_NAME = 'invert display';
-Blockly.Msg.SSD1306_INVERTDISPLAY_CHECKBOX_NAME = 'enable';
+Blockly.Msg.SSD1306_INVERTDISPLAY_NAME = 'Invertovat displej';
+Blockly.Msg.SSD1306_INVERTDISPLAY_CHECKBOX_NAME = 'povolit';
 
 Blockly.Blocks['SSD1306_invertDisplay'] = {
         init: function() {
@@ -99,11 +99,11 @@ Blockly.Blocks['SSD1306_invertDisplay'] = {
         }
 };
 
-Blockly.Msg.SSD1306_DRAWPIXEL_NAME = 'draw pixel';
-Blockly.Msg.SSD1306_XPOS = "column";
-Blockly.Msg.SSD1306_YPOS = "row";
-Blockly.Msg.SSD1306_COLOUR_FIELDDROPDOWN = [["White", "SSD1306_WHITE"],["Black", "SSD1306_BLACK"], ["Inverse", "SSD1306_INVERSE"]];
-Blockly.Msg.SSD1306_COLOUR = 'colour';
+Blockly.Msg.SSD1306_DRAWPIXEL_NAME = 'Nakreslit pixel';
+Blockly.Msg.SSD1306_XPOS = "sloupec";
+Blockly.Msg.SSD1306_YPOS = "řádek";
+Blockly.Msg.SSD1306_COLOUR_FIELDDROPDOWN = [["Bila", "SSD1306_WHITE"],["Cerna", "SSD1306_BLACK"], ["Inverzni", "SSD1306_INVERSE"]];
+Blockly.Msg.SSD1306_COLOUR = 'barva';
 
 Blockly.Blocks['SSD1306_drawPixel'] = {
 	init: function() {
@@ -127,9 +127,9 @@ Blockly.Blocks['SSD1306_drawPixel'] = {
 	}
 };
 
-Blockly.Msg.SSD1306_DRAWLINE_NAME = 'draw line';
-Blockly.Msg.SSD1306_START = 'from';
-Blockly.Msg.SSD1306_END = 'to';
+Blockly.Msg.SSD1306_DRAWLINE_NAME = 'Nakreslit čáru';
+Blockly.Msg.SSD1306_START = 'z';
+Blockly.Msg.SSD1306_END = 'do';
 
 Blockly.Blocks['SSD1306_drawLine'] = {
         init: function() {
@@ -166,8 +166,8 @@ Blockly.Blocks['SSD1306_drawLine'] = {
         }
 };
 
-Blockly.Msg.SSD1306_DRAWRECT_NAME = 'draw rectangle';
-Blockly.Msg.SSD1306_FILL = 'fill';
+Blockly.Msg.SSD1306_DRAWRECT_NAME = 'Nakreslit obdélník';
+Blockly.Msg.SSD1306_FILL = 'výplň';
 
 Blockly.Blocks['SSD1306_drawRect'] = {
         init: function() {
@@ -209,8 +209,8 @@ Blockly.Blocks['SSD1306_drawRect'] = {
 };
 
 
-Blockly.Msg.SSD1306_DRAWCIRCLE_NAME = 'draw circle';
-Blockly.Msg.SSD1306_RADIUS = 'radius';
+Blockly.Msg.SSD1306_DRAWCIRCLE_NAME = 'Nakreslit kruh';
+Blockly.Msg.SSD1306_RADIUS = 'poloměr';
 
 Blockly.Blocks['SSD1306_drawCircle'] = {
         init: function() {
@@ -243,7 +243,7 @@ Blockly.Blocks['SSD1306_drawCircle'] = {
         }
 };
 
-Blockly.Msg.SSD1306_DRAWROUNDRECT_NAME = 'draw round rectangle';
+Blockly.Msg.SSD1306_DRAWROUNDRECT_NAME = 'Nakreslit zaoblený oblélník';
 
 Blockly.Blocks['SSD1306_drawRoundRect'] = {
         init: function() {
@@ -284,7 +284,7 @@ Blockly.Blocks['SSD1306_drawRoundRect'] = {
         }
 };
 
-Blockly.Msg.SSD1306_DRAWTRIANGLE_NAME = 'draw triangle';
+Blockly.Msg.SSD1306_DRAWTRIANGLE_NAME = 'Nakreslit trojůhelník';
 
 Blockly.Blocks['SSD1306_drawTriangle'] = {
         init: function() {
@@ -329,8 +329,8 @@ Blockly.Blocks['SSD1306_drawTriangle'] = {
         }
 };
 
-Blockly.Msg.SSD1306_SETTEXTSIZE_NAME = 'set text size';
-Blockly.Msg.SSD1306_SIZE_NAME = 'text size';
+Blockly.Msg.SSD1306_SETTEXTSIZE_NAME = 'Nastavit velikost textu';
+Blockly.Msg.SSD1306_SIZE_NAME = 'velikost textu';
 
 Blockly.Blocks['SSD1306_setTextSize'] = {
         init: function() {
@@ -346,7 +346,7 @@ Blockly.Blocks['SSD1306_setTextSize'] = {
         }
 };
 
-Blockly.Msg.SSD1306_SETTEXTCOLOUR_NAME = 'set text colour';
+Blockly.Msg.SSD1306_SETTEXTCOLOUR_NAME = 'Nastavit barvu textu';
 
 Blockly.Blocks['SSD1306_setTextColour'] = {
         init: function() {
@@ -355,13 +355,13 @@ Blockly.Blocks['SSD1306_setTextColour'] = {
         this.setColour(Blockly.Blocks.SSD1306_HUE);
 	this.appendDummyInput("")
 		.setAlign(Blockly.ALIGN_RIGHT)
-		.appendField(new Blockly.FieldDropdown([["White", "SSD1306_WHITE"], ["Black", "SSD1306_BLACK"], ["Inverse", "SSD1306_INVERSE"]]), "COLOUR");
+		.appendField(new Blockly.FieldDropdown([["Bila", "SSD1306_WHITE"], ["Cerna", "SSD1306_BLACK"], ["Inverzni", "SSD1306_INVERSE"]]), "COLOUR");
 	this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
         }
 };
 
-Blockly.Msg.SSD1306_SETCURSOR_NAME = 'set cursor';
+Blockly.Msg.SSD1306_SETCURSOR_NAME = 'Nastavit polohu kurzoru';
 
 Blockly.Blocks['SSD1306_setCursor'] = {
         init: function() {
@@ -381,8 +381,8 @@ Blockly.Blocks['SSD1306_setCursor'] = {
         }
 };
 
-Blockly.Msg.SSD1306_CP437_NAME = 'CP437 character set';
-Blockly.Msg.SSD1306_ENABLE = 'enable';
+Blockly.Msg.SSD1306_CP437_NAME = 'CP437 znaková sada';
+Blockly.Msg.SSD1306_ENABLE = 'povolit';
 
 Blockly.Blocks['SSD1306_cp437'] = {
         init: function() {
@@ -397,8 +397,8 @@ Blockly.Blocks['SSD1306_cp437'] = {
         }
 };
 
-Blockly.Msg.SSD1306_CHARACTER = "character";
-Blockly.Msg.SSD1306_WRITE_NAME = "write";
+Blockly.Msg.SSD1306_CHARACTER = "znak";
+Blockly.Msg.SSD1306_WRITE_NAME = "Napsat";
 
 Blockly.Blocks['SSD1306_write'] = {
         init: function() {
@@ -414,8 +414,8 @@ Blockly.Blocks['SSD1306_write'] = {
         }
 };
 
-Blockly.Msg.SSD1306_PRINTLN_NAME = "print line";
-Blockly.Msg.SSD1306_STRING = "text string";
+Blockly.Msg.SSD1306_PRINTLN_NAME = "Napsat řádek";
+Blockly.Msg.SSD1306_STRING = "text [String]";
 
 Blockly.Blocks['SSD1306_println'] = {
         init: function() {
@@ -431,8 +431,8 @@ Blockly.Blocks['SSD1306_println'] = {
         }
 };
 
-Blockly.Msg.SSD1306_PRINT_NAME = "print";
-Blockly.Msg.SSD1306_STRING = "text string";
+Blockly.Msg.SSD1306_PRINT_NAME = "Napsat";
+Blockly.Msg.SSD1306_STRING = "text [String]";
 
 Blockly.Blocks['SSD1306_print'] = {
         init: function() {
@@ -448,7 +448,7 @@ Blockly.Blocks['SSD1306_print'] = {
         }
 };
 
-Blockly.Msg.SSD1306_WIDTH_NAME = "width";
+Blockly.Msg.SSD1306_WIDTH_NAME = "Šířka";
 
 Blockly.Blocks['SSD1306_width'] = {
         init: function() {
@@ -461,7 +461,7 @@ Blockly.Blocks['SSD1306_width'] = {
         }
 };
 
-Blockly.Msg.SSD1306_HEIGHT_NAME = "height";
+Blockly.Msg.SSD1306_HEIGHT_NAME = "Výška";
 
 Blockly.Blocks['SSD1306_height'] = {
         init: function() {
@@ -474,11 +474,11 @@ Blockly.Blocks['SSD1306_height'] = {
         }
 };
 
-Blockly.Msg.SSD1306_STARTSCROLL_NAME = "start scrolling";
-Blockly.Msg.SSD1306_SCROLL_DIRECTION_FIELDDROPDOWN = [["Right", "SSD1306_RIGHT"], ["Left", "SSD1306_LEFT"], ["Diagonal Right", "SSD1306_DIAGRIGHT"], ["Diagonal Left", "SSD1306_DIAGLEFT"]];
-Blockly.Msg.SSD1306_SCROLL_DIRECTION = "direction";
-Blockly.Msg.SSD1306_SCROLL_START_ROW = "start row (0-7)";
-Blockly.Msg.SSD1306_SCROLL_END_ROW = "end row (0-7)";
+Blockly.Msg.SSD1306_STARTSCROLL_NAME = "Posuv displeje";
+Blockly.Msg.SSD1306_SCROLL_DIRECTION_FIELDDROPDOWN = [["Doprava", "SSD1306_RIGHT"], ["Doleva", "SSD1306_LEFT"], ["Diagonalne doprava", "SSD1306_DIAGRIGHT"], ["Diagonalne doleva", "SSD1306_DIAGLEFT"]];
+Blockly.Msg.SSD1306_SCROLL_DIRECTION = "směr";
+Blockly.Msg.SSD1306_SCROLL_START_ROW = "řádek začátku (0-7)";
+Blockly.Msg.SSD1306_SCROLL_END_ROW = "řádek konce (0-7)";
 
 Blockly.Blocks['SSD1306_startscroll'] = {
 	init: function() {
@@ -505,7 +505,7 @@ Blockly.Blocks['SSD1306_startscroll'] = {
 };
 
 
-Blockly.Msg.SSD1306_STOPSCROLL_NAME = "stop scrolling";
+Blockly.Msg.SSD1306_STOPSCROLL_NAME = "Zastavit posuv";
 Blockly.Blocks['SSD1306_stopscroll'] = {
         init: function() {
         this.appendDummyInput()

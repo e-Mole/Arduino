@@ -156,7 +156,7 @@
                         <button id="btn_edit_code" class="btn btn-arduinoRect" data-toggle="modal" data-target="#editModal">
                             <span id="icon_edit_btn" class="glyphicon glyphicon-edit"> </span>
                         </button>
-                        <button id="btn_saveArduino" class="btn btn-arduinoRect">
+                        <button id="btn_saveArduinox" class="btn btn-arduinoRect">
                             <span class="fas fa-file-download fa-1_5x fa-fw"> </span>
                         </button>
                         <button id="btn_verify_local" class="btn btn-arduino" disabled="">
@@ -165,7 +165,7 @@
                         <select id="serialport_ide" disabled="">
                             <option value="no_com" selected="">Choisir le port</option>
                         </select>
-                        <button id="btn_flash_local" class="btn btn-arduino" disabled="">
+                        <button id="btn_flash_localx" class="btn btn-arduino" disabled="">
                             <span class="fas fa-arrow-right fa-1_5x fa-fw"> </span>
                         </button>
                         <button id="btn_term" class="btn btn-arduinoRect" disabled="">
@@ -186,6 +186,13 @@
             </div>
 
             <div id="tools_blocks" class="tab-pane active">
+				<span id="survol" style="color:white"></span>
+                <button id="btn_saveArduino" class="btn btn-arduinoRect">
+                    <span class="fas fa-file-download fa-1_5x fa-fw"> </span>
+                </button>
+                <button id="btn_flash_local" class="btn btn-arduino">
+                    <span class="fas fa-arrow-right fa-1_5x fa-fw"> </span>
+                </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button id="btn_undo" class="btn btn-default">
                     <span class="fa fa-undo"> </span>
                 </button>
@@ -244,13 +251,13 @@
                 </div>
                 <div id="menuPanelBlockly" class="margin-top-5">
                     <ul id="ul_nav" role="tablist">
-                        <li role="presentation" id="tab_supervision" class="disabled">
+                        <li role="presentation" id="tab_supervision" class="active">
                             <a href="https://github.com/technologiescollege/BlocklyArduino_AIO" target="_blank">
                                 <span class="glyphicon glyphicon-transfer"></span>
                                 <span id="a_supervision"> </span>
                             </a>
                         </li>
-                        <li role="presentation" id="tab_blocks" class="active">
+                        <li role="presentation" id="tab_blocks" class="disabled">
                             <a href="#content_blocks" aria-controls="content_blocks" role="tab" data-toggle="tab">
                                 <span class="fa fa-puzzle-piece"></span>
                                 <span id="a_blocks"> </span>

@@ -1,0 +1,389 @@
+//******** Esus Board (Mace Robotics)
+Blockly.Msg.ESUS_EsusBoard_init="Esus board initialisation";
+Blockly.Msg.ESUS_MOTOR1_SPEED="Motor 1, speed:";
+Blockly.Msg.ESUS_MOTOR1_DIRECTION="Direction:";
+Blockly.Msg.ESUS_MOTOR2_SPEED="Motor 2, speed:";
+Blockly.Msg.ESUS_MOTOR2_DIRECTION="Direction:";
+Blockly.Msg.ESUS_ANALOG="Analog input:";
+Blockly.Msg.ESUS_WIFI_SSID="WiFi configuration, infra mode SSID:";
+Blockly.Msg.ESUS_WIFI_PASSWORD="password";
+Blockly.Msg.ESUS_WIFI_IP="WiFi IP:";
+Blockly.Msg.ESUS_WIFI_READ_STREAM="read data WiFi";
+Blockly.Msg.ESUS_WIFI_CONTAIN2="contain";
+Blockly.Msg.ESUS_WIFI_CONTAIN="data WiFi";
+Blockly.Msg.ESUS_WIFI_DATA_AVAILABLE="data WiFi available?";
+Blockly.Msg.ESUS_WIFI_AP="configuration WiFi mode AP SSID:";
+Blockly.Msg.ESUS_WIFI_AP_IP="IP Address:";
+Blockly.Msg.ESUS_WIFI_SEND_STREAM="send data WiFi (text)";
+Blockly.Msg.ESUS_WIFI_SEND_FLOAT_STREAM="send data WiFi (float)";
+
+//******** MRduino Robot (Mace Robotics)
+Blockly.Msg.MRduino_init="MRduino Robot Initialisation ";
+Blockly.Msg.MRduino_forward="Forward";
+Blockly.Msg.MRduino_forward_mm="Forward distance";
+Blockly.Msg.MRduino_controlEnable="Enable controle";
+Blockly.Msg.MRduino_controlDisable="Disable controle";
+Blockly.Msg.MRduino_stop="Stop";
+Blockly.Msg.MRduino_back="Back";
+Blockly.Msg.MRduino_back_mm="Back distance";
+Blockly.Msg.MRduino_turnLeft="Turn left";
+Blockly.Msg.MRduino_turnLeft_degree="Turn left degre";
+Blockly.Msg.MRduino_turnRight="Turn right";
+Blockly.Msg.MRduino_turnRight_degree="Turn right degré";
+Blockly.Msg.MRduino_proxSensor1="proximity sensor 1";
+Blockly.Msg.MRduino_proxSensor2="proximity sensor 2";
+Blockly.Msg.MRduino_proxSensor3="proximity sensor 3";
+Blockly.Msg.MRduino_proxSensor4="proximity sensor 4";
+Blockly.Msg.MRduino_proxSensor5="proximity sensor 5";
+Blockly.Msg.MRduino_proxSensor6="proximity sensor 6";
+Blockly.Msg.MRduino_ambiantLight1="Light sensor 1";
+Blockly.Msg.MRduino_ambiantLight2="Light sensor 2";
+Blockly.Msg.MRduino_ambiantLight3="Light sensor 3";
+Blockly.Msg.MRduino_ambiantLight4="Light sensor 4";
+Blockly.Msg.MRduino_ambiantLight5="Light sensor 5";
+Blockly.Msg.MRduino_ambiantLight6="Light sensor 6";
+Blockly.Msg.MRduino_groundSensor1="Ground sensot 1";
+Blockly.Msg.MRduino_groundSensor2="Ground sensot 2";
+Blockly.Msg.MRduino_groundSensor3="Ground sensot 3";
+Blockly.Msg.MRduino_led1On="led 1 on";
+Blockly.Msg.MRduino_led2On="led 2 on";
+Blockly.Msg.MRduino_led3On="led 3 on";
+Blockly.Msg.MRduino_led1Off="led 1 off";
+Blockly.Msg.MRduino_led2Off="led 2 off";
+Blockly.Msg.MRduino_led3Off="led 3 off";
+Blockly.Msg.MRduino_led1Toggle="led 1 toggle";
+Blockly.Msg.MRduino_led2Toggle="led 2 toggle";
+Blockly.Msg.MRduino_led3Toggle="led 3 toggle";
+Blockly.Msg.MRduino_battery="battery tension";
+Blockly.Msg.MRduino_temperature="temperature";
+
+//******** APDS9960 couleurs et mouvements
+Blockly.Msg.APDS9960_MISC_HELPURL = "https://www.sparkfun.com/products/12787";
+Blockly.Msg.APDS9960_INIT_TITLE = "init of APDS-9960 sensor";
+Blockly.Msg.APDS9960_INIT_TOOLTIP = "test sensor and init I2C bus";
+Blockly.Msg.APDS9960_TEST_TITLE = "test";
+Blockly.Msg.APDS9960_TEST_TOOLTIP = "verify if work well";
+Blockly.Msg.APDS9960_AMBIENT_TITLE = "ambient light";
+Blockly.Msg.APDS9960_AMBIENT_TOOLTIP = "ambient light on 10 bits digit";
+Blockly.Msg.APDS9960_RED_TITLE = "RGB code for RED (0~255)";
+Blockly.Msg.APDS9960_GREEN_TITLE = "RGB code for GREEN (0~255)";
+Blockly.Msg.APDS9960_BLUE_TITLE = "RGB code for BLUE (0~255)";
+Blockly.Msg.APDS9960_COLORSENSOR_TOOLTIP = "send value of color on 10 bits digit";
+
+//******** pbra 20160607 L298N
+Blockly.Msg.ROBOTS_MOTORS_L298N_MOTOR_TITLE = "L298N Motor Controller";
+Blockly.Msg.ROBOTS_MOTORS_L298N_MOTOR_INIT_TITLE = "L298N Motor Controller Init";
+Blockly.Msg.ROBOTS_MOTORS_L298N_ID = "Identication"
+Blockly.Msg.ROBOTS_MOTORS_L298N_MOTOR_SPEED = "Speed";
+Blockly.Msg.ROBOTS_MOTORS_L298N_MOTOR_PIN_IN1 = "IN1 pin (direction)";
+Blockly.Msg.ROBOTS_MOTORS_L298N_MOTOR_PIN_IN2 = "IN2 pin (direction)";
+Blockly.Msg.ROBOTS_MOTORS_L298N_MOTOR_PIN_EN = "EN pin (pwm)";
+Blockly.Msg.ROBOTS_MOTORS_L298N_STOP = "stop";
+Blockly.Msg.ROBOTS_MOTORS_L298N_FORWARD = "forward";
+Blockly.Msg.ROBOTS_MOTORS_L298N_BACKWARD = "backward";
+Blockly.Msg.ROBOTS_MOTORS_L298N_BRAKE = "brake";
+Blockly.Msg.ROBOTS_MOTORS_L298N_INIT_TOOLTIP = "L298N initialization block (1 for each motor)";
+Blockly.Msg.ROBOTS_MOTORS_L298N_TOOLTIP = "L298N block, use the same id as in the initialization block";
+
+//******** pbra 20160607 PinMode
+Blockly.Msg.ARDUINO_INOUT_DIGITAL_MODE_HELPURL = "https://www.arduino.cc/en/Reference/PinMode";
+Blockly.Msg.ARDUINO_INOUT_DIGITAL_MODE_INPUT1 = "Set Pin Mode for pin";
+Blockly.Msg.ARDUINO_INOUT_DIGITAL_MODE_INPUT2 = "to";
+Blockly.Msg.ARDUINO_INOUT_DIGITAL_MODE_DROPDOWN = [["INPUT", "INPUT"], ["OUTPUT", "OUTPUT"], ["INPUT_PULLUP", "INPUT_PULLUP"]];
+Blockly.Msg.ARDUINO_INOUT_DIGITAL_MODE_TOOLTIP = "Configures the specified pin to behave either as an input or an output";
+
+//******** Bluetotth Electronics example http://www.keuwl.com/electronics.html
+Blockly.Msg.BT_ELEC_Init_HELPURL = "https://play.google.com/store/apps/details?id=com.keuwl.arduinobluetooth&hl=fr";
+Blockly.Msg.BT_ELEC_init_text = "QR Code link to Android application:";
+Blockly.Msg.BT_ELEC_TOOLTIP = "download Android application";
+Blockly.Msg.BT_ELEC_LED_brightness_HELPURL = "http://www.keuwl.com/electronics/rduino/bluet/02-pwm-leds/";
+Blockly.Msg.BT_ELEC_LED_brightness_text = "control the brightness of 3 LEDs";
+Blockly.Msg.BT_ELEC_LED_brightness_TOOLTIP = "see demo in Help";
+Blockly.Msg.BT_ELEC_RC_car_HELPURL = "http://www.keuwl.com/electronics/rduino/bluet/01-rc-car/";
+Blockly.Msg.BT_ELEC_RC_car_text = "4 buttons controlling a RC car";
+Blockly.Msg.BT_ELEC_RC_car_TOOLTIP = "see demo in Help";
+
+//********  jfblocks
+Blockly.Msg.jfblocks_Init_HELPURL = "http://jfbegot.free.fr";
+Blockly.Msg.jfblocks_TOOLTIP = "pour décoder des trames Bluetooth Electronics";
+Blockly.Msg.jfblocks_last_value_tooltip = "valeur reçue dans la dernière trame décodée";
+Blockly.Msg.jfblocks_last_value_titre = "dernière valeur";
+Blockly.Msg.jfblocks_decode_tooltip = "décode une trame recue au format:\n<start char><nombre en ASCII><end char>\nex: D145F";
+Blockly.Msg.jfblocks_decode_titre = "quand une trame est reçue";
+Blockly.Msg.jfblocks_action_tooltip = "à placer dans 'Quand trame recue'\nLe caractere de fin peut être tout sauf numérique";
+Blockly.Msg.jfblocks_action_start_code = "si le caractère de début vaut";
+Blockly.Msg.jfblocks_action_do = "alors faire";
+Blockly.Msg.jfblocks_tx_tooltip = "envoie une trame au format:\n<start char><nombre en ASCII><end char>\nex: D145F";
+Blockly.Msg.jfblocks_tx_titre = "émettre une trame";
+Blockly.Msg.jfblocks_tx_start_code = "Start Code";
+Blockly.Msg.jfblocks_tx_data = "donnée";
+Blockly.Msg.jfblocks_tx_end_code = "End Code";
+
+//******** KEYPAD
+Blockly.Msg.KEYPAD_TOUCHE_HELPURL = 'https://www.adafruit.com/products/419';
+Blockly.Msg.KEYPAD_TOUCHE_TEXT = "Key pressed";
+Blockly.Msg.KEYPAD_TOUCHE_LIGNES = "Rows";
+Blockly.Msg.KEYPAD_TOUCHE_TOOLTIP = "Returns keypressed, empty string otherwise";
+Blockly.Msg.KEYPAD_TOUCHE_LIGNE1 = "Row 1";
+Blockly.Msg.KEYPAD_TOUCHE_LIGNE2 = "Row 2";
+Blockly.Msg.KEYPAD_TOUCHE_LIGNE3 = "Row 3";
+Blockly.Msg.KEYPAD_TOUCHE_LIGNE4 = "Row 4";
+Blockly.Msg.KEYPAD_TOUCHE_COLONNE1 = "Column 1";
+Blockly.Msg.KEYPAD_TOUCHE_COLONNE2 = "Column 2";
+Blockly.Msg.KEYPAD_TOUCHE_COLONNE3 = "Column 3";
+
+//******** Sharp IR https://github.com/guillaume-rico/SharpIR
+Blockly.Msg.SHARP_IR_DEFAULT_NAME = 'IR_DIST';
+Blockly.Msg.Sharp_IR_HELPURL = 'https://github.com/guillaume-rico/SharpIR';
+Blockly.Msg.Sharp_IR_MODEL = "model";
+Blockly.Msg.Sharp_IR_ATTACH1 = 'attach IR Sharp';
+Blockly.Msg.Sharp_IR_ATTACH2 = 'id #';
+Blockly.Msg.Sharp_IR_INPUT1 = 'distance measured';
+Blockly.Msg.Sharp_IR_INPUT2 = 'analog pin #';
+Blockly.Msg.Sharp_IR_TOOLTIP1 = 'Analog input only';
+Blockly.Msg.Sharp_IR_TOOLTIP2 = 'distance in centimeters, add tempo between 2 measurement';
+
+//******** Matrix Neopixel DEL RGB 8 x 8 https://www.dfrobot.com/wiki/index.php/8x8_RGB_LED_Matrix_SKU:_DFR0459
+Blockly.Msg.MatrixLED_WS2812B_init = "Led RGB WS2812B Init";
+Blockly.Msg.MatrixLED_WS2812B_clean = "Led RGB WS2812B shutdown";
+Blockly.Msg.MatrixLED_WS2812B_init_Pin = "Pin =";
+Blockly.Msg.MatrixLED_WS2812B_init_Number_of_Pixels = "Number of pixels =";
+Blockly.Msg.MatrixLED_WS2812B_DEFAULT_NAME = "MATRIX_RGB";
+Blockly.Msg.MatrixLED_WS2812B_setBrightness = "Matrix";
+Blockly.Msg.MatrixLED_WS2812B_Brightness = "set brightness to";
+Blockly.Msg.MatrixLED_WS2812B_URL = "https://www.dfrobot.com/wiki/index.php/8x8_RGB_LED_Matrix_SKU:_DFR0459";
+
+Blockly.Msg.MatrixLED_WS2812B_setPixelColor = "Matrix";
+Blockly.Msg.MatrixLED_WS2812B_setPixelColor_Red = "set red (255 max) =";
+Blockly.Msg.MatrixLED_WS2812B_setPixelColor_Green = "set green (255 max) =";
+Blockly.Msg.MatrixLED_WS2812B_setPixelColor_Blue = "set blue (255 max) =";
+Blockly.Msg.MatrixLED_WS2812B_setPixelColor_Pixel_Number = "for pixel number (0 first) =";
+
+//******** Storage : SD card + EEPROM https://www.arduino.cc/en/Reference/EEPROM
+Blockly.Msg.STORAGE_WRITE_SD_FILE = "SD Card, write file";
+Blockly.Msg.STORAGE_SD_DATA = "with data";
+Blockly.Msg.STORAGE_SD_NEWLINE = "newline?";
+Blockly.Msg.STORAGE_EEPROM_WRITE_LONG = "EEPROM write (long) adress";
+Blockly.Msg.STORAGE_DATA_LONG = "data";
+Blockly.Msg.STORAGE_EEPROM_READ_LONG = "EEPROM - read (long) adress";
+Blockly.Msg.STORAGE_EEPROM_WRITE_BYTE = "EEPROM - write (byte) adress";
+Blockly.Msg.STORAGE_DATA_BYTE = "data";
+Blockly.Msg.STORAGE_EEPROM_READ_BYTE = "EEPROM - write (byte) adress";
+
+//******** ESC controller for brushless motor
+Blockly.Msg.DRONE_INTRO = "Motor control";
+Blockly.Msg.DRONE_PIN = "pin  #";
+Blockly.Msg.DRONE_PWM = "pwm [0~255]";
+Blockly.Msg.DRONE_HELPURL = "http://www.instructables.com/id/ESC-Programming-on-Arduino-Hobbyking-ESC/";
+Blockly.Msg.DRONE_TOOLTIP = "controller must be in good mode";
+
+//******** gyroscope + temperature ADXL362
+Blockly.Msg.ADXL362_MISC_HELPURL = "http://annem.github.io/ADXL362/";
+Blockly.Msg.ADXL362_INIT_TITLE = "connect gyroscop (/!\\ 3,3 V /!\\)";
+Blockly.Msg.ADXL362_INIT_TOOLTIP = "bus SPI Arduino card, this Pro Mini is just an exAmple";
+Blockly.Msg.ADXL362_XVALUE_TITLE = "X orientation";
+Blockly.Msg.ADXL362_XVALUE_TOOLTIP = "look at X/Y on ADXL362 card";
+Blockly.Msg.ADXL362_YVALUE_TITLE = "Y orientation";
+Blockly.Msg.ADXL362_YVALUE_TOOLTIP = "look at X/Y on ADXL362 card";
+Blockly.Msg.ADXL362_ZVALUE_TITLE = "Z orientation";
+Blockly.Msg.ADXL362_ZVALUE_TOOLTIP = "look at X/Y on ADXL362 card";
+Blockly.Msg.ADXL362_TEMPVALUE_TITLE = "temperature";
+Blockly.Msg.ADXL362_TEMPVALUE_TOOLTIP = "test";
+
+//******** FRESNEL : Implementation I2CSoftwareLibrary   http://playground.arduino.cc/Main/SoftwareI2CLibrary
+//******** FRESNEL : SPI 
+Blockly.Msg.I2C_INIT_TEXT = "I2C_INIT";
+Blockly.Msg.I2C_INIT_PIN_SCL = "PIN_SCL";
+Blockly.Msg.I2C_INIT_PORT_SCL = "PORT_SCL";
+Blockly.Msg.I2C_INIT_FIELDDROPDOWN_SCL = [["A", "A"], ["B", "B"], ["C", "C"], ["D", "D"], ["E", "E"]];
+Blockly.Msg.I2C_INIT_PIN_SDA = "PIN_SDA";
+Blockly.Msg.I2C_INIT_PORT_SDA = "PORT_SDA";
+Blockly.Msg.I2C_INIT_FIELDDROPDOWN_SDA = [["A", "A"], ["B", "B"], ["C", "C"], ["D", "D"], ["E", "E"]];
+Blockly.Msg.I2C_INIT_TOOLTIP = "configure les broches SDA et SCL";
+Blockly.Msg.I2C_INIT_HELPURL = "http://playground.arduino.cc/Main/SoftwareI2CLibrary";     
+
+Blockly.Msg.I2C_START_TEXT = "I2C_START";
+Blockly.Msg.I2C_START_ADRESS = "adresse";
+Blockly.Msg.I2C_START_RW = "R/W";
+Blockly.Msg.I2C_START_TOOLTIP = "envoi un Start + adresse de l'esclave + R/W";
+Blockly.Msg.I2C_START_HELPURL = "http://playground.arduino.cc/Main/SoftwareI2CLibrary";
+Blockly.Msg.I2C_START_FIELDDROPDOWN = [["W (écriture)", "I2C_WRITE"], ["R (lecture)", "I2C_READ"]];
+
+Blockly.Msg.I2C_RESTART_TEXT = "I2C_RESTART";
+Blockly.Msg.I2C_RESTART_ADRESS = "adresse";
+Blockly.Msg.I2C_RESTART_RW = "R/W";
+Blockly.Msg.I2C_RESTART_FIELDDROPDOWN = [["W (écriture)", "I2C_WRITE"], ["R (lecture)", "I2C_READ"]];
+Blockly.Msg.I2C_RESTART_TOOLTIP = "envoi un REStart + adresse de l'esclave + R/W";
+Blockly.Msg.I2C_RESTART_HELPURL = "http://playground.arduino.cc/Main/SoftwareI2CLibrary";
+
+Blockly.Msg.I2C_STOP_TEXT = "I2C_STOP";
+Blockly.Msg.I2C_STOP_TOOLTIP = "envoi un Stop et donc libère le bus";
+Blockly.Msg.I2C_STOP_HELPURL = "http://playground.arduino.cc/Main/SoftwareI2CLibrary";
+
+Blockly.Msg.I2C_WRITE_TEXT = "I2C_WRITE";
+Blockly.Msg.I2C_WRITE_DATA = "data";
+Blockly.Msg.I2C_WRITE_TOOLTIP = "écrit un octet de donnée";
+Blockly.Msg.I2C_WRITE_HELPURL = "http://playground.arduino.cc/Main/SoftwareI2CLibrary";
+
+Blockly.Msg.I2C_READ_TEXT = "I2C_READ";
+Blockly.Msg.I2C_READ_LAST = "Last? : ";
+Blockly.Msg.I2C_READ_FIELDDROPDOWN = [["non","false"], ["oui","true"]];
+Blockly.Msg.I2C_READ_TOOLTIP = "Reçoit un octet de donnée avec l'envoi d'un paramètre last = oui pour le dernier";
+Blockly.Msg.I2C_READ_HELPURL = "http://playground.arduino.cc/Main/SoftwareI2CLibrary";
+Blockly.Msg.I2C_SCAN_TEXT = "lister les périphériques I²C dans la console série";
+Blockly.Msg.I2C_SCAN_TOOLTIP = "Scanne les périphériques et retourne les adresses dans la console à régler sur 115200 bauds";
+Blockly.Msg.I2C_SCAN_HELPURL = "http://info.technologiescollege.fr/wiki/doku.php/fr/arduino/lcd-i2c";
+
+///////////////////////////
+
+Blockly.Msg.I2C_INIT_HW_TITRE = "I2C_INIT";
+Blockly.Msg.I2C_INIT_HW_TOOLTIP = "Initialisation du bus I2C par le maitre";
+Blockly.Msg.I2C_INIT_HW_HELPURL = "";
+
+Blockly.Msg.I2C_STOP_HW_TITRE = "I2C_STOP";
+Blockly.Msg.I2C_STOP_HW_TOOLTIP = "Le maitre libère le bus";
+Blockly.Msg.I2C_STOP_HW_HELPURL = "";
+
+Blockly.Msg.I2C_RESTART_HW_TITRE = "I2C_RESTART";
+Blockly.Msg.I2C_RESTART_HW_TOOLTIP = "Le maitre garde la main sur le bus";
+Blockly.Msg.I2C_RESTART_HW_HELPURL = "";
+
+Blockly.Msg.I2C_WRITE_HW_TEXT = "I2C_WRITE";
+Blockly.Msg.I2C_WRITE_HW_DATA = "Data";
+Blockly.Msg.I2C_WRITE_HW_FIELDDROPDOWN = [["0x","0x"], ["0b","0b"],["Décimal",""]];
+Blockly.Msg.I2C_WRITE_HW_TOOLTIP = "Le maitre écrit un octet de donnée";
+Blockly.Msg.I2C_WRITE_HW_HELPURL = "";
+
+Blockly.Msg.I2C_START_HW_TEXT = "I2C_START";
+Blockly.Msg.I2C_START_HW_DATA = "Slave Address";
+Blockly.Msg.I2C_START_HW_FIELDDROPDOWN = [["0x","0x"], ["0b","0b"],["Décimal",""]];
+Blockly.Msg.I2C_START_HW_TOOLTIP = "Le maitre initie une transmission avec l'esclave identifié par l'adresse";
+Blockly.Msg.I2C_START_HW_HELPURL = "";
+
+Blockly.Msg.I2C_REQUEST_HW_TEXT = "I2C_REQUEST";
+Blockly.Msg.I2C_REQUEST_HW_DATA = "Slave Address";
+Blockly.Msg.I2C_REQUEST_HW_FIELDDROPDOWN = [["0x","0x"], ["0b",,"0b"],["Décimal",""]];
+Blockly.Msg.I2C_REQUEST_HW_NB_BYTES = "Number of Bytes to read";
+Blockly.Msg.I2C_REQUEST_HW_TOOLTIP = "Le maitre enregistre dans une mémoire temporaire (buffer) le nombre d'octets demandé à l'esclave identifié par l'adresse";
+Blockly.Msg.I2C_REQUEST_HW_HELPURL = "";
+
+Blockly.Msg.I2C_AVAILABLE_HW_TITRE = "I2C_DATA_AVAILABLE";
+Blockly.Msg.I2C_AVAILABLE_HW_TOOLTIP = "Renvoie le nombre de données qui reste à lire dans le buffer";
+Blockly.Msg.I2C_AVAILABLE_HW_HELPURL = "";
+
+Blockly.Msg.I2C_DATA_HW_TITRE = "I2C_DATA";
+Blockly.Msg.I2C_DATA_HW_TOOLTIP = "Lit une donnée du buffer";
+Blockly.Msg.I2C_DATA_HW_HELPURL = "";
+
+//////////////////////////
+
+Blockly.Msg.icn_HelpUrl = "http://www.ebay.fr/cln/dvarrel/robot-arduino/271320303014";
+Blockly.Msg.icn_ds18b20_HelpUrl = "https://www.carnetdumaker.net/articles/mesurer-une-temperature-avec-un-capteur-1-wire-ds18b20-et-une-carte-arduino-genuino";
+
+
+Blockly.Msg.SPI_INIT_TEXT = "SPI_INIT";
+Blockly.Msg.SPI_INIT_SPEED = "fréquence (MHz)"
+Blockly.Msg.SPI_INIT_MODE = "mode";  
+Blockly.Msg.SPI_INIT_MODE_FIELDDROPDOWN = [["mode 0 (0,0)", "SPI_MODE0"], ["mode 1 (0,1)", "SPI_MODE1"], ["mode 2 (1,0)", "SPI_MODE2"], ["mode 3 (1,1)", "SPI_MODE3"]];
+Blockly.Msg.SPI_INIT_BITORDER = "ordre des bits";
+Blockly.Msg.SPI_INIT_BITORDER_FIELDDROPDOWN = [["MSB -> LSB", "MSBFIRST"], ["LSB -> MSB", "LSBFIRST"]];
+Blockly.Msg.SPI_INIT_TOOLTIP = " configuration de la liaison SPI" ; 
+Blockly.Msg.SPI_INIT_HELPURL = " " ;
+
+Blockly.Msg.SPI_SEND_TEXT = "SPI_SEND";
+Blockly.Msg.SPI_SEND_DATA = "donnée";
+Blockly.Msg.SPI_SEND_TOOLTIP = " envoi de la donnée par bus SPI";
+Blockly.Msg.SPI_SEND_FIELDDROPDOWN = [["0x","0x"], ["0b","0b"],["Décimal",""]];
+Blockly.Msg.SPI_SEND_HELPURL = "";
+
+Blockly.Msg.SPI_RECEIVE_TEXT = "SPI_RECEIVE";
+Blockly.Msg.SPI_RECEIVE_TOOLTIP = "récupère une donnée";
+Blockly.Msg.SPI_RECEIVE_HELPURL = "" ;
+
+//******** light sensor TSL2561
+Blockly.Msg.TSL2561_MISC_HELPURL = "https://learn.adafruit.com/tsl2561/wiring-the-tsl2561-sensor";
+Blockly.Msg.TSL2561_READ_TITLE = "light by lux";
+Blockly.Msg.TSL2561_READ_TOOLTIP = "returns light value in standard SI lux units, (max 17 000 lux)";
+Blockly.Msg.TSL2561_INIT_TITLE = "configuration of TSL2561 sensor";
+Blockly.Msg.TSL2561_INIT_TOOLTIP = "autogain is on and integration time is 13 ms";
+
+//**** AUTODUINO ************************************************************************************
+// definition of the different target mockups
+Blockly.Msg.AUTODUINO_TARGET_AUTODUINO = "Carte Autoduino";
+Blockly.Msg.AUTODUINO_TARGET_AUTOLUMI = "Maquette A4 AutoLumi";
+Blockly.Msg.AUTODUINO_TARGET_AUTOALARME = "Maquette A4 AutoAlarme";
+Blockly.Msg.AUTODUINO_TARGET_PORTAIL_1 = "Maquette A4 Portail 1 ventail";
+
+// definition of the pin names for the different target mockups
+
+// get the toolbox and toolboxId from url parameters
+//var toolboxName = BlocklyDuino.getStringParamFromUrl('toolbox', '');
+var toolboxId = BlocklyDuino.getStringParamFromUrl('toolboxids', '');
+
+var AutoduinoIn1 = "In1";
+var AutoduinoIn2 = "In2";
+var AutoduinoIn3 = "In3";
+var AutoduinoIn4 = "In4";
+var AutoduinoIn5 = "In5";
+var AutoduinoIn6 = "In6";
+var AutoduinoIn7 = "In7";
+var AutoduinoIn8 = "In8";
+
+var AutoduinoOut1 = "Out1";
+var AutoduinoOut2 = "Out2";
+var AutoduinoOut3 = "Out3";
+var AutoduinoOut4 = "Out4";
+var AutoduinoOut5 = "Out5";
+var AutoduinoOut6 = "Out6";
+var AutoduinoOut7 = "Out7";
+var AutoduinoOut8 = "Out8";
+
+// redefine pin names for specific toolbox
+if (toolboxId.indexOf('AUTODUINO_TARGET_AUTOLUMI') > -1) { // Load AUTODUINO_TARGET_AUTOLUMI
+	//alert("Load: AUTODUINO_TARGET_AUTOLUMI - " + toolboxId);
+	AutoduinoIn1 = "LDR lumière extérieure";
+	AutoduinoIn3 = "BP cuisine";
+	AutoduinoIn4 = "BP sanitaires";
+	AutoduinoIn5 = "BP1 salon";
+	AutoduinoIn6 = "BP2 salon";
+	AutoduinoIn7 = "BP entrée";
+	AutoduinoIn8 = "PIR présence";
+
+	AutoduinoOut3 = "Lumière cuisine";
+	AutoduinoOut4 = "Lumière sanitaires";
+	AutoduinoOut5 = "LED sanitaires";
+	AutoduinoOut6 = "Lumière salon 1";
+	AutoduinoOut7 = "Lumière salon 2";
+	AutoduinoOut8 = "Lumière entrée";
+}
+else if (toolboxId.indexOf('AUTODUINO_TARGET_AUTOALARME') > -1) { // Load AUTODUINO_TARGET_AUTOALARME
+	//alert("Load: AUTODUINO_TARGET_AUTOALARME - " + toolboxId);
+	AutoduinoIn1 = "ILS cuisine";
+	AutoduinoIn2 = "ILS salon";
+	AutoduinoIn3 = "ILS porte";
+	AutoduinoIn4 = "PIR présence";
+	AutoduinoIn5 = "Télémètre ultrason";
+	AutoduinoIn6 = "Recepteur IR";
+
+	AutoduinoOut1 = "Signal lumineux";
+	AutoduinoOut2 = "Buzzer";
+}
+else if (toolboxId.indexOf('AUTODUINO_TARGET_PORTAIL_1') > -1) { // Load AUTODUINO_TARGET_PORTAIL_1
+	//alert("Load: AUTODUINO_TARGET_PORTAIL_1 - " + toolboxId);
+	AutoduinoIn1 = "BP intérieur";
+	AutoduinoIn2 = "BP extérieur";
+	AutoduinoIn3 = "Fin de course haut";
+	AutoduinoIn4 = "Fin de course bas";
+	AutoduinoIn5 = "Récepteur IR extérieur";
+	AutoduinoIn6 = "Récepteur IR intérieur";
+
+	AutoduinoOut1 = "Signal lumineux";
+	AutoduinoOut2 = "Buzzer";
+	AutoduinoOut3 = "Emetteur IR extérieur";
+	AutoduinoOut4 = "Emetteur IR intérieur";
+	AutoduinoOut5 = "Moteur A";
+	AutoduinoOut6 = "Moteur B";
+}
+else { // Load defaults
+	//alert("Load: " + toolbox);
+}

@@ -61,6 +61,112 @@ Blockly.Blocks.rf433_rx = {
   }
 };
 
+
+Blockly.Blocks.rf433_rx_bytes = {
+  init: function() {
+    this.setColour(Blockly.Blocks.RF433.HUE);
+    this.setHelpUrl(Blockly.Msg.RF433_HELPURL);
+    this.appendDummyInput()
+        .appendField("Přijmout pole bajtů");
+    this.appendValueInput("PIN")
+        .setCheck("Number")
+        .appendField(Blockly.Msg.RF433_rx_INPUT);
+	this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setTooltip(Blockly.Msg.RF433_rx_TOOLTIP);
+	
+  }
+};
+
+
+
+Blockly.Blocks['rf433_rx_b0'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("RX Byte 1");
+    this.setInputsInline(false);
+    this.setOutput(true, "Number");
+    this.setColour(0);
+    this.setTooltip('Vrací byte z přiajaté zprávy');
+    this.setHelpUrl('https://www.arduino.cc/reference/en/');
+  }
+};
+
+
+Blockly.Blocks['rf433_rx_b0'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("RX Byte 1");
+    this.setInputsInline(false);
+    this.setOutput(true, "Number");
+    this.setColour(0);
+    this.setTooltip('Vrací byte z přiajaté zprávy');
+    this.setHelpUrl('https://www.arduino.cc/reference/en/');
+  }
+};
+
+Blockly.Blocks['rf433_rx_b1'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("RX Byte 1");
+    this.setInputsInline(false);
+    this.setOutput(true, "Number");
+    this.setColour(0);
+    this.setTooltip('Vrací byte z přiajaté zprávy');
+    this.setHelpUrl('https://www.arduino.cc/reference/en/');
+  }
+};
+
+Blockly.Blocks['rf433_rx_b2'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("RX Byte 2");
+    this.setInputsInline(false);
+    this.setOutput(true, "Number");
+    this.setColour(0);
+    this.setTooltip('Vrací byte z přiajaté zprávy');
+    this.setHelpUrl('https://www.arduino.cc/reference/en/');
+  }
+};
+
+Blockly.Blocks['rf433_rx_b3'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("RX Byte 3");
+    this.setInputsInline(false);
+    this.setOutput(true, "Number");
+    this.setColour(0);
+    this.setTooltip('Vrací byte z přiajaté zprávy');
+    this.setHelpUrl('https://www.arduino.cc/reference/en/');
+  }
+};
+
+Blockly.Blocks['rf433_rx_b4'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("RX Byte 4");
+    this.setInputsInline(false);
+    this.setOutput(true, "Number");
+    this.setColour(0);
+    this.setTooltip('Vrací byte z přiajaté zprávy');
+    this.setHelpUrl('https://www.arduino.cc/reference/en/');
+  }
+};
+
+Blockly.Blocks['rf433_rx_b5'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("RX Byte 5");
+    this.setInputsInline(false);
+    this.setOutput(true, "Number");
+    this.setColour(0);
+    this.setTooltip('Vrací byte z přiajaté zprávy');
+    this.setHelpUrl('https://www.arduino.cc/reference/en/');
+  }
+};
+
+
+
 Blockly.Blocks.rf433_tx = {
   init: function() {
     this.setColour(Blockly.Blocks.RF433.HUE);
@@ -79,23 +185,49 @@ Blockly.Blocks.rf433_tx = {
   }
 };
 
-Blockly.Blocks.rf433_init_receiver = {
+
+
+
+
+
+
+Blockly.Blocks.rf433_tx_bytes = {
   init: function() {
     this.setColour(Blockly.Blocks.RF433.HUE);
     this.setHelpUrl(Blockly.Msg.RF433_HELPURL);
     this.appendDummyInput()
-        .setAlign(Blockly.ALIGN_LEFT)
-        .appendField(Blockly.Msg.RF433_init_receiver_TEXT)
-        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/RF433/rf433_recepteur.png', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize))
+        .appendField(Blockly.Msg.RF433_tx_TEXT);
     this.appendValueInput("PIN")
-        .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField(Blockly.Msg.RF433_init_receiver_INPUT)
-        .setCheck('Number');
+        .setCheck("Number")
+        .appendField(Blockly.Msg.RF433_tx_INPUT1);
+    this.appendValueInput("MESSAGE_B1")
+        .setCheck("Number")
+        .appendField("Byte 1");
+	this.appendValueInput("MESSAGE_B2")
+        .setCheck("Number")
+        .appendField("Byte 2");
+	this.appendValueInput("MESSAGE_B3")
+        .setCheck("Number")
+        .appendField("Byte 3");
+	this.appendValueInput("MESSAGE_B4")
+        .setCheck("Number")
+        .appendField("Byte 4");
+	this.appendValueInput("MESSAGE_B5")
+        .setCheck("Number")
+        .appendField("Byte 5");
+	this.appendValueInput("MESSAGE_B6")
+        .setCheck("Number")
+        .appendField("Byte 6");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setTooltip(Blockly.Msg.RF433_init_receiver_TOOLTIP);
+    this.setTooltip(Blockly.Msg.RF433_tx_TOOLTIP);
   }
 };
+
+
+
+
+
 
 Blockly.Blocks.rf433_init_transmitter = {
   init: function() {
