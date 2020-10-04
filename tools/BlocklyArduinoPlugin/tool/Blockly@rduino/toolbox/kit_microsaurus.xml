@@ -109,7 +109,7 @@
 	<category name="CAT_VARIABLES" custom="VARIABLE" colour="#FF8C1A"></category>
 	<category name="CAT_FUNCTIONS" custom="PROCEDURE" colour="#FF6680"></category>
 	<sep></sep>
-	<category name="CAT_ARDUINO_SERVO" colour="#191919">
+	<category name="CAT_ARDUINO_SERVO" colour="#1b3474">
 		<block type="servo_attach"></block>
 		<block type="servo_move">
 			<value name="DEGREE">

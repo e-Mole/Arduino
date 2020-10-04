@@ -717,7 +717,7 @@
 		<block type="MatrixLED_WS2812B_draw"></block>
 		<block type="MatrixLED_WS2812B_CLEAN"></block>
 	</category>
-	<category name="CAT_ARDUINO_SERVO" colour="#191919">
+	<category name="CAT_ARDUINO_SERVO" colour="#1b3474">
 		<block type="servo_attach"></block>
 		<block type="servo_move">
 			<value name="DEGREE">

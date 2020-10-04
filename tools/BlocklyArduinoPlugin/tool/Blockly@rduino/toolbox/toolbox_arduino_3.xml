@@ -1817,7 +1817,7 @@
 		<block type="mbot_rgb_onboard"></block>
 		<block type="mbot_buzzer"></block>
 	</category>
-	<category name="CAT_ARDUINO_SERVO" colour="#191919">
+	<category name="CAT_ARDUINO_SERVO" colour="#1b3474">
 		<block type="servo_attach"></block>
 		<block type="servo_move">
 			<value name="DEGREE">

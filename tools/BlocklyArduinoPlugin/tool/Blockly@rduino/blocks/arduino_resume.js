@@ -34,6 +34,7 @@ function() {
 
 head.load(
 "blocks/DHT/DHT.js",
+"blocks/moje_knihovna/moje.js",
 "blocks/Adafruit/Adafruit_motorshield/adafruit_motorshield_v1.js",
 "blocks/Adafruit/Adafruit_motorshield/adafruit_motorshield_v2.js",
 "blocks/Adafruit/Adafruit_RGB_LCD_Shield/Adafruit_RGB_LCD_Shield.js",

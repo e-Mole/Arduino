@@ -1,2 +1,2 @@
-d:\arduino-blockly\build\libraries\IRremote\esp32.cpp.o: \
- D:\arduino-blockly\portable\sketchbook\libraries\IRremote\src\esp32.cpp
+c:\Users\user\Documents\GitHub\arduino\build\libraries\IRremote\esp32.cpp.o: \
+ C:\Users\user\Documents\GitHub\arduino\portable\sketchbook\libraries\IRremote\src\esp32.cpp

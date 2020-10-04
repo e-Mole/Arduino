@@ -1,2 +1,2 @@
-d:\arduino-blockly\build\core\WMath.cpp.o: \
- D:\arduino-blockly\hardware\arduino\avr\cores\arduino\WMath.cpp
+c:\Users\user\Documents\GitHub\arduino\build\core\WMath.cpp.o: \
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\WMath.cpp

@@ -508,6 +508,9 @@
         <block type="teplota" disabled="false"></block>
         <block type="vlhkost" disabled="false"></block>
 	</category>
+    <category name="CAT_MOJE" colour="#007be3">
+		<block type="ultrazvuk_dalkomer" disabled="false"></block>
+	</category>
 	<category name="CAT_LCD_SCREEN" colour="#87AD34">
 		<category name="- Grove I2C LCD RGB" colour="#8ec31f">
 				<block type="grove_lcd_rgb_init"></block>
@@ -3043,7 +3046,7 @@
 			</block>
 		</category>
 	</category>
-	<category name="CAT_ARDUINO_SERVO" colour="#191919">
+	<category name="CAT_ARDUINO_SERVO" colour="#1b3474">
 		<block type="servo_attach"></block>
 		<block type="servo_move">
 			<value name="DEGREE">

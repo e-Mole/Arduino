@@ -8,8 +8,8 @@
     "cacheControl" : {
       "maxAge" : 600,
       "mustRevalidate" : false,
-      "noStore" : false,
-      "noCache" : false
+      "noCache" : false,
+      "noStore" : false
     },
     "expires" : "2020-09-07T22:08:18.522"
   }, {
@@ -21,23 +21,23 @@
     "cacheControl" : {
       "maxAge" : 300,
       "mustRevalidate" : false,
-      "noStore" : false,
-      "noCache" : false
+      "noCache" : false,
+      "noStore" : false
     },
     "expires" : "2020-09-07T22:03:19.536"
   }, {
     "remoteURL" : "https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json",
-    "localPath" : "D:\\arduino-master\\portable\\cache\\raw.githubusercontent.com\\sparkfun\\Arduino_Boards\\master\\IDE_Board_Manager\\package_sparkfun_index.json",
+    "localPath" : "C:\\Users\\user\\Documents\\GitHub\\arduino\\portable\\cache\\raw.githubusercontent.com\\sparkfun\\Arduino_Boards\\master\\IDE_Board_Manager\\package_sparkfun_index.json",
     "eTag" : "0e32db6118195109870dff58bf5878d8c8e8bbf492cda417374d51713f3a453b",
     "md5" : "MD5:ad7415a0f346fd563d3e92b48b536e37",
-    "createdAt" : "2020-09-07T22:01:17.469",
+    "createdAt" : "2020-10-04T23:17:38.574",
     "cacheControl" : {
       "maxAge" : 300,
       "mustRevalidate" : false,
-      "noStore" : false,
-      "noCache" : false
+      "noCache" : false,
+      "noStore" : false
     },
-    "expires" : "2020-09-07T22:06:17.469"
+    "expires" : "2020-10-04T23:22:38.574"
   }, {
     "remoteURL" : "https://raw.githubusercontent.com/uStepper/uStepperHardware/master/package_ustepper_index.json",
     "localPath" : "D:\\arduino-master\\portable\\cache\\raw.githubusercontent.com\\uStepper\\uStepperHardware\\master\\package_ustepper_index.json",
@@ -47,8 +47,8 @@
     "cacheControl" : {
       "maxAge" : 300,
       "mustRevalidate" : false,
-      "noStore" : false,
-      "noCache" : false
+      "noCache" : false,
+      "noStore" : false
     },
     "expires" : "2020-09-07T22:03:19.841"
   }, {
@@ -60,23 +60,49 @@
     "cacheControl" : {
       "maxAge" : 300,
       "mustRevalidate" : false,
-      "noStore" : false,
-      "noCache" : false
+      "noCache" : false,
+      "noStore" : false
     },
     "expires" : "2020-09-07T22:03:20.405"
   }, {
+    "remoteURL" : "https://downloads.arduino.cc/libraries/library_index.json.gz",
+    "localPath" : "C:\\Users\\user\\Documents\\GitHub\\arduino\\portable\\cache\\downloads.arduino.cc\\libraries\\library_index.json.gz",
+    "eTag" : "c1371c9300f9b3f49f789c8676243775",
+    "md5" : "MD5:c1371c9300f9b3f49f789c8676243775",
+    "createdAt" : "2020-10-04T23:19:30.894",
+    "cacheControl" : {
+      "maxAge" : 14400,
+      "mustRevalidate" : false,
+      "noCache" : false,
+      "noStore" : false
+    },
+    "expires" : "2020-10-05T03:19:30.894"
+  }, {
     "remoteURL" : "https://downloads.arduino.cc/packages/package_index.json.sig",
-    "localPath" : "D:\\arduino-master\\portable\\cache\\downloads.arduino.cc\\packages\\package_index.json.sig",
-    "eTag" : "c4017088b57210e1dac36f7bb4b36f9f",
-    "md5" : "MD5:c4017088b57210e1dac36f7bb4b36f9f",
-    "createdAt" : "2020-09-07T21:58:22.498",
+    "localPath" : "C:\\Users\\user\\Documents\\GitHub\\arduino\\portable\\cache\\downloads.arduino.cc\\packages\\package_index.json.sig",
+    "eTag" : "547ed28e3602902498defa82fdb1e18b",
+    "md5" : "MD5:547ed28e3602902498defa82fdb1e18b",
+    "createdAt" : "2020-10-04T23:17:39.196",
     "cacheControl" : {
       "maxAge" : 3600,
       "mustRevalidate" : false,
-      "noStore" : false,
-      "noCache" : false
+      "noCache" : false,
+      "noStore" : false
     },
-    "expires" : "2020-09-07T22:58:22.498"
+    "expires" : "2020-10-05T00:17:39.196"
+  }, {
+    "remoteURL" : "https://downloads.arduino.cc/libraries/library_index.json.sig",
+    "localPath" : "C:\\Users\\user\\Documents\\GitHub\\arduino\\portable\\cache\\downloads.arduino.cc\\libraries\\library_index.json.sig",
+    "eTag" : "efcbdde3fb42f68fbfc27ac8c20ce6d0",
+    "md5" : "MD5:efcbdde3fb42f68fbfc27ac8c20ce6d0",
+    "createdAt" : "2020-10-04T23:19:31.149",
+    "cacheControl" : {
+      "maxAge" : 14400,
+      "mustRevalidate" : false,
+      "noCache" : false,
+      "noStore" : false
+    },
+    "expires" : "2020-10-05T03:19:31.149"
   }, {
     "remoteURL" : "https://dl.espressif.com/dl/package_esp32_index.json",
     "localPath" : "D:\\arduino-master\\portable\\cache\\dl.espressif.com\\dl\\package_esp32_index.json",
@@ -86,22 +112,22 @@
     "cacheControl" : {
       "maxAge" : 3600,
       "mustRevalidate" : false,
-      "noStore" : false,
-      "noCache" : false
+      "noCache" : false,
+      "noStore" : false
     },
     "expires" : "2020-09-07T22:58:21.855"
   }, {
     "remoteURL" : "https://downloads.arduino.cc/packages/package_index.json",
-    "localPath" : "D:\\arduino-master\\portable\\cache\\downloads.arduino.cc\\packages\\package_index.json",
-    "eTag" : "b994686de2711e5e14da4145d153a58e",
-    "md5" : "MD5:b994686de2711e5e14da4145d153a58e",
-    "createdAt" : "2020-09-07T21:58:22.297",
+    "localPath" : "C:\\Users\\user\\Documents\\GitHub\\arduino\\portable\\cache\\downloads.arduino.cc\\packages\\package_index.json",
+    "eTag" : "35298a363363609b1c4de6c90b56b102",
+    "md5" : "MD5:35298a363363609b1c4de6c90b56b102",
+    "createdAt" : "2020-10-04T23:17:39.015",
     "cacheControl" : {
       "maxAge" : 3600,
       "mustRevalidate" : false,
-      "noStore" : false,
-      "noCache" : false
+      "noCache" : false,
+      "noStore" : false
     },
-    "expires" : "2020-09-07T22:58:22.297"
+    "expires" : "2020-10-05T00:17:39.015"
   } ]
 }

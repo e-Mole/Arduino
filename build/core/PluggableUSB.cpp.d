@@ -1,14 +1,14 @@
-d:\arduino-blockly\build\core\PluggableUSB.cpp.o: \
- D:\arduino-blockly\hardware\arduino\avr\cores\arduino\PluggableUSB.cpp \
- D:\arduino-blockly\hardware\arduino\avr\cores\arduino\USBAPI.h \
- D:\arduino-blockly\hardware\arduino\avr\cores\arduino\Arduino.h \
- D:\arduino-blockly\hardware\arduino\avr\cores\arduino\binary.h \
- D:\arduino-blockly\hardware\arduino\avr\cores\arduino\WCharacter.h \
- D:\arduino-blockly\hardware\arduino\avr\cores\arduino\WString.h \
- D:\arduino-blockly\hardware\arduino\avr\cores\arduino\HardwareSerial.h \
- D:\arduino-blockly\hardware\arduino\avr\cores\arduino\Stream.h \
- D:\arduino-blockly\hardware\arduino\avr\cores\arduino\Print.h \
- D:\arduino-blockly\hardware\arduino\avr\cores\arduino\Printable.h \
- D:\arduino-blockly\hardware\arduino\avr\variants\eightanaloginputs/pins_arduino.h \
- d:\arduino-blockly\hardware\arduino\avr\variants\standard\pins_arduino.h \
- D:\arduino-blockly\hardware\arduino\avr\cores\arduino\PluggableUSB.h
+c:\Users\user\Documents\GitHub\arduino\build\core\PluggableUSB.cpp.o: \
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\PluggableUSB.cpp \
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\USBAPI.h \
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\Arduino.h \
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\binary.h \
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\WCharacter.h \
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\WString.h \
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h \
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\Stream.h \
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\Print.h \
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\Printable.h \
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\variants\eightanaloginputs/pins_arduino.h \
+ c:\users\user\documents\github\arduino\hardware\arduino\avr\variants\standard\pins_arduino.h \
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\PluggableUSB.h

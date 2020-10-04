@@ -156,8 +156,8 @@ Blockly.Msg.CAT_FISCHERTECHNIK_MOTORS_CC = "moteurs CC";
 Blockly.Msg.CAT_FLYCAMONE = "FlyCamOne Eco v2"; // přidáno 20. srpna 2016
 
 Blockly.Msg.CAT_GROVE = "Háj"; // přidáno 9. března 2015
-Blockly.Msg.CAT_GROVE_IN = "V";
-Blockly.Msg.CAT_GROVE_OUT = "Out";
+Blockly.Msg.CAT_GROVE_IN =  "Vstupní moduly";
+Blockly.Msg.CAT_GROVE_OUT =  "Výstupní moduly";
 Blockly.Msg.CAT_GROVE_LCD = "LCD display";
 Blockly.Msg.CAT_GROVE_COMM = "Komunikace";
 
@@ -197,8 +197,8 @@ Blockly.Msg.CAT_RF433_2 = "RF433";
 Blockly.Msg.CAT_RF433_3 = "RF433";
 
 Blockly.Msg.CAT_BQ = "bitbloq"; // přidáno 14. července 2015
-Blockly.Msg.CAT_BQ_IN = "V";
-Blockly.Msg.CAT_BQ_OUT = "Out";
+Blockly.Msg.CAT_BQ_IN =  "Vstupní moduly";
+Blockly.Msg.CAT_BQ_OUT =  "Výstupní moduly";
 Blockly.Msg.CAT_BQ_COMM = "Komunikace";
 
 Blockly.Msg.CAT_JEULIN = "Semafor"; // přidáno 11. ledna 2016
@@ -261,7 +261,7 @@ Blockly.Msg.CAT_SHARP = "Sharp IR";
 
 Blockly.Msg.CAT_MATRIX_LED_RGB = "Matrix RGB LED 8x8"; // přidáno 25. března 2017
 
-Blockly.Msg.CAT_STORAGE_EEPROM = "úložiště"; // přidáno 29. března 2017
+Blockly.Msg.CAT_STORAGE_EEPROM = "Úložiště"; // přidáno 29. března 2017
 
 Blockly.Msg.CAT_DRONE = "dron"; // přidáno 26. dubna 2017
 
@@ -425,7 +425,7 @@ Blockly.Msg.RENAME_INSTANCE_TITLE = 'Přejmenovat všechny instance " %1" na:';
 
 Blockly.Msg.ARDUINO_BASE_DELAY_HELPURL = "http://arduino.cc/en/Reference/delay";
 Blockly.Msg.ARDUINO_BASE_DELAY_DELAY_TIME = "zpoždění (v ms)";
-Blockly.Msg.ARDUINO_BASE_DELAY_DELAY_TIME_SEC = "zpoždění (y)";
+Blockly.Msg.ARDUINO_BASE_DELAY_DELAY_TIME_SEC = "zpoždění (sekundy)";
 Blockly.Msg.ARDUINO_BASE_DELAY_TOOLTIP = "určit dobu pauzy v milisekundách";
 Blockly.Msg.ARDUINO_BASE_SETUP = "Nastavení";
 Blockly.Msg.ARDUINO_BASE_SETUP_HELPURL = "https://www.arduino.cc/en/Reference/Setup";
@@ -441,10 +441,10 @@ Blockly.Msg.ARDUINO_BASE_MAP_HELPURL = "http://arduino.cc/en/Reference/map";
 Blockly.Msg.ARDUINO_BASE_MAP_NUM = "Analog [0-1023]";
 Blockly.Msg.ARDUINO_BASE_MAP_DMAX = "přepočítej na [0-";
 Blockly.Msg.ARDUINO_BASE_MAP_TOOLTIP = "přenést hodnotu na stupnici od 0 do 1023 do jiné stupnice";
-Blockly.Msg.ARDUINO_BASE_CODE = "Kódování";
+Blockly.Msg.ARDUINO_BASE_CODE = "Vložit kus kódu";
 Blockly.Msg.ARDUINO_BASE_COMMENT_HELPURL = "https://www.arduino.cc/reference/en/language/structure/f further-syntax/blockcomment/";
-Blockly.Msg.ARDUINO_BASE_COMMENT_TEXT = "komentář";
-Blockly.Msg.ARDUINO_BASE_CONST = "definovat";
+Blockly.Msg.ARDUINO_BASE_COMMENT_TEXT = "Komentář";
+Blockly.Msg.ARDUINO_BASE_CONST = "Definovat";
 Blockly.Msg.ARDUINO_BASE_DEFINE_HELPURL = "https://www.arduino.cc/en/Reference/Define";
 Blockly.Msg.ARDUINO_BASE_DEFINE = "Definovat";
 Blockly.Msg.ARDUINO_BASE_DEFINE_TOOLTIP = "Definovat konstanty a librairies";
@@ -452,7 +452,7 @@ Blockly.Msg.ARDUINO_BASE_DEFINE_CONST_HELPURL = "https://www.arduino.cc/en/Refer
 Blockly.Msg.ARDUINO_BASE_DEFINE_CONST_INPUT1 = "definovat proměnnou";
 Blockly.Msg.ARDUINO_BASE_DEFINE_CONST_INPUT2 = "jako";
 Blockly.Msg.ARDUINO_BASE_DEFINE_CONST_TOOLTIP = "umožňuje programátorovi před kompilací programu pojmenovat konstantní hodnotu";
-Blockly.Msg.ARDUINO_BASE_END = 'čekat navždy (KONEC programu)';
+Blockly.Msg.ARDUINO_BASE_END = 'Čekat navždy (KONEC programu)';
 Blockly.Msg.ARDUINO_BASE_BEGIN_TOOLTIP = "pomoc s ukázkou začátku a konce programu";
 Blockly.Msg.ARDUINO_BASE_BEGIN = "START programu";
 Blockly.Msg.ARDUINO_BASE_TEMPO1 = "kdy";
@@ -462,12 +462,12 @@ Blockly.Msg.ARDUINO_BASE_TEMPO_TOOLTIP = "Ověřte, zda uplynul časový interva
 Blockly.Msg.ARDUINO_BASE_TEMPO_HELPURL = "http://www.mon-club-elec.fr/pmwiki_reference_arduino/pmwiki.php?n=Main.ExempleBlinkWithoutDelay";
 Blockly.Msg.ARDUINO_BASE_TOGGLE = "přepnout stav PIN";
 Blockly.Msg.ARDUINO_BASE_TOGGLE_TOOLTIP = "Přepnout: \nwrite logický stav 0, pokud byl 1, nebo 1, pokud byl 1, na PIN #";
-Blockly.Msg.ARDUINO_BASE_INCLUDE_FILE_TEXT = "Inclure un fichier";
-Blockly.Msg.ARDUINO_BASE_INCLUDE_FILE_NAME = "Nom du fichier";
-Blockly.Msg.ARDUINO_BASE_INCLUDE_FILE_TOOLTIP = "Permit d'inclure un fichier contenu dans le repertoire de travail";
+Blockly.Msg.ARDUINO_BASE_INCLUDE_FILE_TEXT = "Vložit hlavočkový soubor";
+Blockly.Msg.ARDUINO_BASE_INCLUDE_FILE_NAME = "knihovna";
+Blockly.Msg.ARDUINO_BASE_INCLUDE_FILE_TOOLTIP = "Vložit hlavičkový soubor z knihovny";
 Blockly.Msg.ARDUINO_BASE_INCLUDE_FILE_HELPURL = "https://www.arduino.cc/reference/en/language/structure/follow-syntax/include/";
-Blockly.Msg.ARDUINO_BASE_INCLUDE_LIB_TEXT = "zahrnout knihovnu";
-Blockly.Msg.ARDUINO_BASE_INCLUDE_LIB_TOOLTIP = "zahrnout do náčrtu externí knihovny";
+Blockly.Msg.ARDUINO_BASE_INCLUDE_LIB_TEXT = "Zahrnout knihovnu";
+Blockly.Msg.ARDUINO_BASE_INCLUDE_LIB_TOOLTIP = "Zahrnout do projektu externí knihovnu";
 Blockly.Msg.ARDUINO_CONSTRAIN = "omezit";
 Blockly.Msg.ARDUINO_CONSTRAIN_X = "číslo";
 Blockly.Msg.ARDUINO_CONSTRAIN_A = "od A =";
@@ -685,8 +685,8 @@ Blockly.Msg.GROVE_INOUT_LINE_TEXT = "Vyhledávač linek";
 Blockly.Msg.GROVE_INOUT_LINE_INPUT = "PIN #";
 Blockly.Msg.GROVE_INOUT_LINE_TOOLTIP = "Výstup digitálního signálu, aby robot spolehlivě sledoval černou čáru na bílém pozadí";
 Blockly.Msg.GROVE_INOUT_ULTRASONIC_HELPURL = "http://www.seeedstudio.com/wiki/Grove_-_Ultrasonic_Ranger";
-Blockly.Msg.GROVE_INOUT_ULTRASONIC_TEXT = "Ultrasonic Ranger";
-Blockly.Msg.GROVE_INOUT_ULTRASONIC_INPUT = "PIN #";
+Blockly.Msg.GROVE_INOUT_ULTRASONIC_TEXT = "Ultrazvukový dálkoměr";
+Blockly.Msg.GROVE_INOUT_ULTRASONIC_INPUT = "PIN";
 Blockly.Msg.GROVE_INOUT_ULTRASONIC_UNIT = "jednotka";
 Blockly.Msg.GROVE_INOUT_ULTRASONIC_UNIT_CHOICE = [["cm", "cm"], ["palec", "palec"]];
 Blockly.Msg.GROVE_INOUT_ULTRASONIC_TOOLTIP = "Bezkontaktní modul pro měření vzdálenosti";
@@ -1703,12 +1703,12 @@ Blockly.Msg.MatrixLED_WS2812B_setPixelColor_Pixel_Number = "pro počet pixelů (
 Blockly.Msg.STORAGE_WRITE_SD_FILE = "SD karta, zápis do souboru";
 Blockly.Msg.STORAGE_SD_DATA = "s daty";
 Blockly.Msg.STORAGE_SD_NEWLINE = "nový řádek?";
-Blockly.Msg.STORAGE_EEPROM_WRITE_LONG = "adresa pro zápis (dlouhou) EEPROM";
+Blockly.Msg.STORAGE_EEPROM_WRITE_LONG = "EEPROM - zapsat Long na adresu";
 Blockly.Msg.STORAGE_DATA_LONG = "data";
-Blockly.Msg.STORAGE_EEPROM_READ_LONG = "EEPROM - adresa pro čtení (dlouhá)";
-Blockly.Msg.STORAGE_EEPROM_WRITE_BYTE = "EEPROM - adresa pro zápis (bajt)";
+Blockly.Msg.STORAGE_EEPROM_READ_LONG = "EEPROM - přečíst Long z adresy";
+Blockly.Msg.STORAGE_EEPROM_WRITE_BYTE = "EEPROM - zapsat Bajt na adresu";
 Blockly.Msg.STORAGE_DATA_BYTE = "data";
-Blockly.Msg.STORAGE_EEPROM_READ_BYTE = "EEPROM - adresa pro zápis (bajt)";
+Blockly.Msg.STORAGE_EEPROM_READ_BYTE = "EEPROM - přečíst Bajt z adresy";
 
 // ******** ESC ovladač pro střídavý motor
 Blockly.Msg.DRONE_INTRO = "Řízení motoru";
@@ -2762,3 +2762,4 @@ Blockly.Msg.LORA_RANDOM_TOOLTIP = 'random';
 Blockly.Msg.LORA_HELPURL = 'https://github.com/sandeepmistry/arduino-LoRa/blob/master/API.md';
 
 Blockly.Msg.CAT_DHT = "DHT Snímače"; // přidáno 12. února 2017
+Blockly.Msg.CAT_MOJE = "Moje Bloky"; // přidáno 12. února 2017

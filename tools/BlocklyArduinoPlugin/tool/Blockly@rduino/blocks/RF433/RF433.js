@@ -215,6 +215,24 @@ Blockly.Blocks.rf433_tx_bytes = {
 
 
 
+Blockly.Blocks.rf433_init_receiver = {
+  init: function() {
+    this.setColour(Blockly.Blocks.RF433.HUE);
+    this.setHelpUrl(Blockly.Msg.RF433_HELPURL);
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_LEFT)
+        .appendField(Blockly.Msg.RF433_init_receiver_TEXT)
+        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/RF433/rf433_recepteur.png', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize))
+    this.appendValueInput("PIN")
+        .setAlign(Blockly.ALIGN_RIGHT)
+        .appendField(Blockly.Msg.RF433_init_receiver_INPUT)
+        .setCheck('Number');
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setTooltip(Blockly.Msg.RF433_init_receiver_TOOLTIP);
+  }
+};
+
 
 
 Blockly.Blocks.rf433_init_transmitter = {
