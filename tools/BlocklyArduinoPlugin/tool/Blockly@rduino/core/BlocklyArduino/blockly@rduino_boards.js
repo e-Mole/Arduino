@@ -80,6 +80,32 @@ var profile = {
         upload_arg: "arduino:avr:leonardo",
         help_link: "https://www.arduino.cc/en/Main/Arduino_BoardLeonardo"
     },
+    arduino_pro_micro: {
+        description: "Arduino Pro Micro",
+        cpu: "atmega32u4",
+        speed: "57600",
+        digital: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "14", "15", "16", "18", "19", "20", "21"],
+        dropdownDigital: [["0", "0"], ["1", "1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"], ["6", "6"], ["7", "7"], ["8", "8"], ["9", "9"], ["10", "10"], ["14", "14"], ["15", "15"], ["16", "16"], ["18", "18"], ["19", "19"], ["20", "20"], ["21", "21"]],
+        PWM: ["3", "5", "6", "9", "10"],
+        dropdownPWM: [["3", "3"], ["5", "5"], ["6", "6"], ["9", "9"], ["10", "10"]],
+        analog: ["A0", "A1", "A2", "A3", "A6", "A7", "A8", "A9", "A10"],
+        dropdownAnalog: [["A0", "A0"], ["A1", "A1"], ["A2", "A2"], ["A3", "A3"], ["A6(D4)", "4"], ["A7(D6)", "6"], ["A8(D8)", "8"], ["A9(D9)", "9"], ["A10(D10)", "10"]],
+        /*irqonchange: [["1", "1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"], ["6", "6"], ["7", "7"], ["8", "8"], ["9", "9"], ["10", "10"], ["11", "11"], ["12", "12"], ["13", "13"],["A0", "14"], ["A1", "15"], ["A2", "16"], ["A3", "17"], ["A4", "18"], ["A5", "19"]],*/
+        I2C: ["2", "3"],
+        SPI: ["connect"],
+        interrupt: ["3", "2", "0", "1", "7"],
+        picture: "media/boards/arduino_pro_micro.jpg",
+        miniPicture: "media/boards/arduino_pro_micro_mini.jpg",
+        miniPicture_hor: "media/boards/arduino_pro_micro_mini_hor.jpg",
+        serial: [['300', '300'], ['600', '600'], ['1200', '1200'],
+            ['2400', '2400'], ['4800', '4800'], ['9600', '9600'],
+            ['14400', '14400'], ['19200', '19200'], ['28800', '28800'],
+            ['31250', '31250'], ['38400', '38400'], ['57600', '57600'],
+            ['115200', '115200']],
+        serialPin: [["0 (Rx) ; 1 (Tx)", "0"]],
+        upload_arg: "arduino:avr:leonardo",
+        help_link: "https://arduino-shop.cz/arduino/960-arduino-leonardo-pro-micro.html"
+    },
     arduino_mega: {
         description: "Arduino Mega",
         cpu: "atmega2560",

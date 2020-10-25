@@ -9,5 +9,6 @@ c:\Users\user\Documents\GitHub\arduino\build\core\Stream.cpp.o: \
  C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\Print.h \
  C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\Printable.h \
  C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\USBAPI.h \
- C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\variants\eightanaloginputs/pins_arduino.h \
- c:\users\user\documents\github\arduino\hardware\arduino\avr\variants\standard\pins_arduino.h
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\USBDesc.h \
+ C:\Users\user\Documents\GitHub\arduino\hardware\arduino\avr\cores\arduino\USBCore.h \
+ C:\Users\user\Documents\GitHub\arduino\portable\packages\SparkFun\hardware\avr\1.1.13\variants\promicro/pins_arduino.h
