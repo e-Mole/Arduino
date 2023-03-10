@@ -89,24 +89,12 @@ Blockly.Arduino['molegraph_u01_com'] = function() {
   if (value_ch7 == '') { value_ch7 = ''; } else { value_ch7 = '  moleGraph.SetChannelValue(7, ' + value_ch7 + ');\n'; }
   if (value_ch8 == '') { value_ch8 = ''; } else { value_ch8 = '  moleGraph.SetChannelValue(8, ' + value_ch8 + ');\n'; }
   
-  Blockly.Arduino.includes_['molegraph_incl'] = '#include <MoleGraph.h> // Link MoleGraph library (www.e-mole.cz/diy/molegraph)';
+  Blockly.Arduino.includes_['molegraph_u01_incl'] = '#include <molegraphmanual.h> // Link MoleGraph library (www.e-mole.cz/diy/molegraph)';
   
-  Blockly.Arduino.definitions_['molegraph_def1'] = 'MoleGraph moleGraph;  // Create MoleGraph instance\n';
+  Blockly.Arduino.definitions_['molegraph_u01_def1'] = 'MoleGraph moleGraph; // Create MoleGraph instance\n';
   
-  Blockly.Arduino.userFunctions_['molegraph_fn1'] = 
-  'void MeasurementStartedCallback(void) {\n'
-  + '  digitalWrite(13, HIGH);\n'
-  + '}\n'
-  + 'void MeasurementStoppedCallback(void) {\n'
-  + '  digitalWrite(13, LOW);\n'
-  + '}\n'
-  + 'void MeasurementPausedCallback(void) {\n'
-  + '  digitalWrite(13, LOW);\n'
-  + '}\n'
-  + 'void MeasurementContinuedCallback(void) {\n'
-  + '  digitalWrite(13, HIGH);\n'
-  + '}\n'
-  + 'void UpdateGraphChannels(void) {\n'
+  Blockly.Arduino.userFunctions_['molegraph_u01_fn1'] = 
+  'void updateGraphChannels(void) {\n'
   + value_ch1
   + value_ch2
   + value_ch3
@@ -117,74 +105,43 @@ Blockly.Arduino['molegraph_u01_com'] = function() {
   + value_ch8
   + '}';
   
-  Blockly.Arduino.setups_['molegraph_stp'] =
-  '\n  moleGraph.Setup();\n'
-  + '  moleGraph.SetSendingCallback(&UpdateGraphChannels);\n'
-  + '  moleGraph.SetMeasurementStartedCallback(&MeasurementStartedCallback);\n'
-  + '  moleGraph.SetMeasurementStoppedCallback(&MeasurementStoppedCallback);\n'
-  + '  moleGraph.SetMeasurementPausedCallback(&MeasurementPausedCallback);\n'
-  + '  moleGraph.SetMeasurementContinuedCallback(&MeasurementContinuedCallback);\n'
-  + '  pinMode(13, OUTPUT);\n'; 
+  Blockly.Arduino.setups_['molegraph_u01_stp'] =
+  '\n  moleGraph.init();\n'
+  + '  moleGraph.setSendingCallback(&updateGraphChannels);\n'; 
   
   // TODO: Assemble into code variable.
-  var code = 'moleGraph.CheckInput();\n';
+  var code = 'moleGraph.process();\n';
   //return [code, Blockly.Arduino.ORDER_FUNCTION_CALL];
   //return [code, Blockly.Arduino.ORDER_ATOMIC];
   return code;
 };
 
-Blockly.Arduino['molegraph_u01_port'] = function() {
-  //IMPORTANT: delete unneeded lines
+Blockly.Arduino['molegraph_u01_port'] = function(block) {
   var dropdown_mg_u01_port = block.getFieldValue('mg_u01_port');
   var dropdown_mg_u01_pin = block.getFieldValue('mg_u01_pin');
-  Blockly.Arduino.includes_[] = 'libraries code';
-  Blockly.Arduino.variables_[] = 'variables';
-  Blockly.Arduino.definitions_[] = 'instance';
-  Blockly.Arduino.userFunctions_[] = 'functions';
-  Blockly.Arduino.setups_[]='arduino code for setup()';
-  var code = 'arduino code for loop()';
+  if (dropdown_mg_u01_pin == '') { dropdown_mg_u01_pin = ''; } else { dropdown_mg_u01_pin = '_' + dropdown_mg_u01_port + dropdown_mg_u01_pin; }
+  var code = 'PORT' + dropdown_mg_u01_pin;
   
-  //return [code, Blockly.Arduino.ORDER_ATOMIC];
-  return code;
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
-Blockly.Arduino['molegraph_u01_pullup'] = function() {
+Blockly.Arduino['molegraph_u01_pullup'] = function(block) {
   var dropdown_mg_u01_port = block.getFieldValue('mg_u01_port');
   var dropdown_mg_u01_on_of = block.getFieldValue('mg_u01_on_of');
-  Blockly.Arduino.includes_[] = 'libraries code';
-  Blockly.Arduino.variables_[] = 'variables';
-  Blockly.Arduino.definitions_[] = 'instance';
-  Blockly.Arduino.userFunctions_[] = 'functions';
-  Blockly.Arduino.setups_[]='arduino code for setup()';
-  var code = 'arduino code for loop()';
-  
-  //return [code, Blockly.Arduino.ORDER_ATOMIC];
+  var code = 'moleGraph.setPullup(' + dropdown_mg_u01_port + ', ' + dropdown_mg_u01_on_of + ');\n';
+ 
   return code;
 };
 
-Blockly.Arduino['molegraph_u01_button'] = function() {
+Blockly.Arduino['molegraph_u01_button'] = function(block) {
   var dropdown_mg_u01_button = block.getFieldValue('mg_u01_button');
-  // TODO: Assemble JavaScript into code variable.
-  Blockly.Arduino.includes_[] = 'libraries code';
-  Blockly.Arduino.variables_[] = 'variables';
-  Blockly.Arduino.definitions_[] = 'instance';
-  Blockly.Arduino.userFunctions_[] = 'functions';
-  Blockly.Arduino.setups_[]='arduino code for setup()';
-  var code = 'arduino code for loop()';
+  var code = 'moleGraph.getButton(' + dropdown_mg_u01_button + ')';
   
-  //return [code, Blockly.Arduino.ORDER_ATOMIC];
-  return code;
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
-Blockly.Arduino['molegraph_u01_battery'] = function() {
-  // TODO: Assemble JavaScript into code variable.
-  Blockly.Arduino.includes_[] = 'libraries code';
-  Blockly.Arduino.variables_[] = 'variables';
-  Blockly.Arduino.definitions_[] = 'instance';
-  Blockly.Arduino.userFunctions_[] = 'functions';
-  Blockly.Arduino.setups_[]='arduino code for setup()';
-  var code = 'arduino code for loop()';
+Blockly.Arduino['molegraph_u01_battery'] = function(block) {
+  var code = 'moleGraph.getBattery()';
   
-  //return [code, Blockly.Arduino.ORDER_ATOMIC];
-  return code;
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
