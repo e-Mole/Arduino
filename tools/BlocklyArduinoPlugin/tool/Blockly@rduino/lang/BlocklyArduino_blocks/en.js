@@ -294,6 +294,10 @@ Blockly.Msg.CAT_MESURE = "Measuring devices"; //added 22/11/2017
 Blockly.Msg.CAT_DS18B20 = "Thermometer DS18B20"; //added 15/09/2017
 Blockly.Msg.CAT_TSL2561 = "Light Meter"; //added november 21th 2017
 
+Blockly.Msg.CAT_MBITBEAM = "m-BITBEAM"; // added 19/04/2021
+Blockly.Msg.CAT_MOLEGRAPH = "MoleGraph"; // added 19/04/2021
+Blockly.Msg.CAT_FRETKA = "Ferretbot"; // added 19/04/2021
+
 Blockly.Msg.CAT_ACTIONNEURS = "actuators"; //added 03/11/2017
 Blockly.Msg.CAT_CAPTEURS = "sensors";
 Blockly.Msg.CAT_ACTIONNEURS_del = " - LEL";

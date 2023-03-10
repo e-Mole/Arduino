@@ -294,6 +294,10 @@ Blockly.Msg.CAT_MESURE = "Měřicí zařízení"; // přidáno 22/11/2017
 Blockly.Msg.CAT_DS18B20 = "Teploměr DS18B20"; // přidáno 15/09/2017
 Blockly.Msg.CAT_TSL2561 = "Měřič světla"; // přidáno 21. listopadu 2017
 
+Blockly.Msg.CAT_MBITBEAM = "m-BITBEAM"; // added 19/04/2021
+Blockly.Msg.CAT_MOLEGRAPH = "MoleGraph"; // added 19/04/2021
+Blockly.Msg.CAT_FRETKA = "Robot Fretka"; // added 19/04/2021
+
 Blockly.Msg.CAT_ACTIONNEURS = "akční členy"; // přidáno 03/11/2017
 Blockly.Msg.CAT_CAPTEURS = "senzory";
 Blockly.Msg.CAT_ACTIONNEURS_del = "- LEL";
