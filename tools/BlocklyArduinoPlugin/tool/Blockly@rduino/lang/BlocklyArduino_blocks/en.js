@@ -2764,4 +2764,33 @@ Blockly.Msg.LORA_DISABLE_INVERT_IQ_TOOLTIP = 'disable invert IQ';
 Blockly.Msg.LORA_RANDOM_TOOLTIP = 'random';
 Blockly.Msg.LORA_HELPURL = 'https://github.com/sandeepmistry/arduino-LoRa/blob/master/API.md';
 
-
+// MoleGraph
+Blockly.Msg.MG_ARDUINO_SERVO_MOVE_HELPURL = "http://www.arduino.cc/playground/ComponentLib/servo";
+Blockly.Msg.MG_ARDUINO_SERVO_MOVE_INPUT1 = "MG U01 Servo: Rotate";
+Blockly.Msg.MG_ARDUINO_SERVO_MOVE_INPUT2 = "port";
+Blockly.Msg.MG_ARDUINO_SERVO_MOVE_DEGREE = "angle (0~180°)";
+Blockly.Msg.MG_ARDUINO_SERVO_MOVE_TOOLTIP = "rotation possible between 0 ~ 180 degrees";
+Blockly.Msg.MG_ARDUINO_SERVO_READ_DEGREES_HELPURL = "http://www.arduino.cc/playground/ComponentLib/servo";
+Blockly.Msg.MG_ARDUINO_SERVO_READ_DEGREES_INPUT1 = "MG U01 Servo: angle";
+Blockly.Msg.MG_ARDUINO_SERVO_READ_DEGREES_INPUT2 = "port";
+Blockly.Msg.MG_ARDUINO_SERVO_READ_DEGREES_TOOLTIP = "returns the number of degrees the last rotation";
+Blockly.Msg.MG_ARDUINO_SERVO_ATTACH1 = "MG U01 Servo: Attach";
+Blockly.Msg.MG_ARDUINO_SERVO_ATTACH2 = "Assign Name";
+Blockly.Msg.MG_ARDUINO_SERVO_DETACH = "MG U01 Servo: Detach";
+Blockly.Msg.MG_ARDUINO_COM_TOOLTIP = "Block for sending sensor data to MoleGraph App. This version is for Arduino NANO/UNO. For more info visit MoleGraph webpage www.e-mole.cz/diy/molegraph";
+Blockly.Msg.MG_ARDUINO_COM_HELP = "https://www.e-mole.cz/diy/molegraph";
+Blockly.Msg.MG_ARDUINO_U01_COM_TOOLTIP = "Block for sending sensor data to MoleGraph App. This version is for MoleGraph U01 unit based on Arduino NANO. For more info visit MoleGraph webpage www.e-mole.cz/diy/molegraph";
+Blockly.Msg.MG_ARDUINO_U01_PORT_TOOLTIP = "MG U01 safe pin selection: select PORT and GPIO -> available pins are accessible via predefined constants";
+Blockly.Msg.MG_ARDUINO_U01_PULLUP_TOOLTIP = "Set MG U01 10K pull-up for selected port [1-4] [on/off] for GPIO 02 (analog) (this is not internal Arduino pull-up!).";
+Blockly.Msg.MG_ARDUINO_U01_BUTTON_TOOLTIP = "Get MG U01 F button state for selected port [1-4], if pressed return 'true'.";
+Blockly.Msg.MG_ARDUINO_U01_BATTERY_TOOLTIP = "Get MG U01 battery status: 0 - no battery, 1 - battery ok, 2 - battery low.";
+Blockly.Msg.MG_ARDUINO_U01_BATTERY_BLOCK = "MG U01 battery status";
+Blockly.Msg.MG_ARDUINO_U01_PULLUP_STATE_ON = "state on";
+Blockly.Msg.MG_ARDUINO_U01_PULLUP_STATE_OFF = "state off";
+Blockly.Msg.MG_ARDUINO_U01_BUTTON_F1 = "button F1";
+Blockly.Msg.MG_ARDUINO_U01_BUTTON_F2 = "button F2";
+Blockly.Msg.MG_ARDUINO_U01_BUTTON_F3 = "button F3";
+Blockly.Msg.MG_ARDUINO_U01_BUTTON_F4 = "button F4";
+Blockly.Msg.MG_ARDUINO_U01_BUTTON_PRESSED = "pressed";
+Blockly.Msg.MG_ARDUINO_U01_PORT_D = "pin digital (GPIO 01)";
+Blockly.Msg.MG_ARDUINO_U01_PORT_A = "pin analog (GPIO 02)";

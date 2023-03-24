@@ -21,3 +21,17 @@ Blockly.Blocks.molegraph_u01_button.getBlockType = function() {
 Blockly.Blocks.molegraph_u01_battery.getBlockType = function() {
 	return Blockly.Types.BOOLEAN;
 };
+
+//MG U01 Servo blocks
+Blockly.Blocks.molegraph_u01_servo_attach.getBlockType = function() {
+	return Blockly.Types.BOOLEAN;
+};
+Blockly.Blocks.molegraph_u01_servo_move.getBlockType = function() {
+	return Blockly.Types.BOOLEAN;
+};
+Blockly.Blocks.molegraph_u01_servo_read_degrees.getBlockType = function() {
+	return Blockly.Types.BOOLEAN;
+};
+Blockly.Blocks.molegraph_u01_servo_detach.getBlockType = function() {
+	return Blockly.Types.BOOLEAN;
+};

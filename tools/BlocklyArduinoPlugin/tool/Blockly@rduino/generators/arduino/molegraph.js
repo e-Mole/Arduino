@@ -145,3 +145,35 @@ Blockly.Arduino['molegraph_u01_battery'] = function(block) {
   
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
+
+//MG U01 Servo blocks
+Blockly.Arduino['molegraph_u01_servo_attach'] = function() {
+  var value_port = this.getFieldValue('mg_u01_port');
+  var dropdown_name = this.getFieldValue('SERVO_NAME');
+
+  Blockly.Arduino.definitions_['var_servo' + dropdown_name] = 'Servo ' + dropdown_name + ';';
+  Blockly.Arduino.setups_['setup_servo_' + dropdown_name] = dropdown_name + '.attach(' + value_port + ');';
+  return '';
+};
+
+Blockly.Arduino['molegraph_u01_servo_move'] = function() {
+  var value_degree = Blockly.Arduino.valueToCode(this, 'DEGREE', Blockly.Arduino.ORDER_ATOMIC);
+  var dropdown_name = this.getFieldValue('SERVO_NAME');
+
+  var code = dropdown_name + '.write(' + value_degree + ');\n';
+  return code;
+};
+
+Blockly.Arduino['molegraph_u01_servo_read_degrees'] = function() {
+  var dropdown_name = this.getFieldValue('SERVO_NAME');
+
+  var code = dropdown_name + '.read()';
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino['molegraph_u01_servo_detach'] = function() {
+  var dropdown_name = this.getFieldValue('SERVO_NAME');
+  
+  var code = dropdown_name+'.detach();';
+  return code;
+};

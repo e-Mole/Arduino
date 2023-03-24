@@ -45,8 +45,8 @@ Blockly.Blocks['molegraph_com'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);        
     this.setColour(230);
- this.setTooltip("Block for sending sensor data to MoleGraph App. This version is for Arduino NANO/UNO. For more info visit MoleGraph webpage www.e-mole.cz/diy/molegraph");
- this.setHelpUrl("https://www.e-mole.cz/diy/molegraph");
+ this.setTooltip(Blockly.Msg.MG_ARDUINO_COM_TOOLTIP);
+ this.setHelpUrl(Blockly.Msg.MG_ARDUINO_COM_HELP);
   }
 };
 
@@ -90,8 +90,8 @@ Blockly.Blocks['molegraph_u01_com'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);        
     this.setColour(230);
- this.setTooltip("Block for sending sensor data to MoleGraph App. This version is for MoleGraph U01 unit based on Arduino NANO. For more info visit MoleGraph webpage www.e-mole.cz/diy/molegraph");
- this.setHelpUrl("https://www.e-mole.cz/diy/molegraph");
+ this.setTooltip(Blockly.Msg.MG_ARDUINO_U01_COM_TOOLTIP);
+ this.setHelpUrl(Blockly.Msg.MG_ARDUINO_COM_HELP);
   }
 };
 
@@ -100,11 +100,11 @@ Blockly.Blocks['molegraph_u01_port'] = {
     this.appendDummyInput()
         .appendField("MG U01")
         .appendField(new Blockly.FieldDropdown([["port 1","1"], ["port 2","2"], ["port 3","3"], ["port 4","4"]]), "mg_u01_port")
-        .appendField(new Blockly.FieldDropdown([["pin digital (GPIO 01)","D"], ["pin analog (GPIO 02)","A"]]), "mg_u01_pin");
+        .appendField(new Blockly.FieldDropdown([[Blockly.Msg.MG_ARDUINO_U01_PORT_D,"D"], [Blockly.Msg.MG_ARDUINO_U01_PORT_A,"A"]]), "mg_u01_pin");
     this.setOutput(true, null);
     this.setColour(260);
  this.setOutput(true, null);
- this.setTooltip("MG U01 safe pin selection: select PORT and GPIO -> available pins are accessible via predefined constants");
+ this.setTooltip(Blockly.Msg.MG_ARDUINO_U01_PORT_TOOLTIP);
  this.setHelpUrl("");
   }
 };
@@ -114,11 +114,11 @@ Blockly.Blocks['molegraph_u01_pullup'] = {
     this.appendDummyInput()
         .appendField("MG U01 pull-up")
         .appendField(new Blockly.FieldDropdown([["port 1","1"], ["port 2","2"], ["port 3","3"], ["port 4","4"]]), "mg_u01_port")
-        .appendField(new Blockly.FieldDropdown([["state off","false"], ["state on","true"]]), "mg_u01_on_of");
+        .appendField(new Blockly.FieldDropdown([[Blockly.Msg.MG_ARDUINO_U01_PULLUP_STATE_OFF,"false"], [Blockly.Msg.MG_ARDUINO_U01_PULLUP_STATE_ON,"true"]]), "mg_u01_on_of");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
-  this.setTooltip("Set MG U01 10K pull-up for selected port [1-4] [on/off] for GPIO 02 (analog) (this is not internal Arduino pull-up!).");
+  this.setTooltip(Blockly.Msg.MG_ARDUINO_U01_PULLUP_TOOLTIP);
  this.setHelpUrl("");
   }
 };
@@ -127,11 +127,11 @@ Blockly.Blocks['molegraph_u01_button'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("MG U01")
-        .appendField(new Blockly.FieldDropdown([["button F1","1"], ["button F2","2"], ["button F3","3"], ["button F4","4"]]), "mg_u01_button")
-        .appendField("pressed");
+        .appendField(new Blockly.FieldDropdown([[Blockly.Msg.MG_ARDUINO_U01_BUTTON_F1,"1"], [Blockly.Msg.MG_ARDUINO_U01_BUTTON_F2,"2"], [Blockly.Msg.MG_ARDUINO_U01_BUTTON_F3,"3"], [Blockly.Msg.MG_ARDUINO_U01_BUTTON_F4,"4"]]), "mg_u01_button")
+        .appendField(Blockly.Msg.MG_ARDUINO_U01_BUTTON_PRESSED);
     this.setOutput(true, "Boolean");
     this.setColour(260);
- this.setTooltip("Get MG U01 F button state for selected port [1-4], if pressed return 'true'.");
+ this.setTooltip(Blockly.Msg.MG_ARDUINO_U01_BUTTON_TOOLTIP);
  this.setHelpUrl("");
   }
 };
@@ -139,10 +139,122 @@ Blockly.Blocks['molegraph_u01_button'] = {
 Blockly.Blocks['molegraph_u01_battery'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("MG U01 battery status");
+        .appendField(Blockly.Msg.MG_ARDUINO_U01_BATTERY_BLOCK);
     this.setOutput(true, "Number");
     this.setColour(260);
- this.setTooltip("Get MG U01 battery status: 0 - no battery, 1 - battery ok, 2 - battery low.");
+ this.setTooltip(Blockly.Msg.MG_ARDUINO_U01_BATTERY_TOOLTIP);
  this.setHelpUrl("");
+  }
+};
+
+// MG U01 servo blocks
+Blockly.Blocks['molegraph_u01_servo_attach'] = {
+  init: function() {
+    this.setColour(230);
+	this.setHelpUrl(Blockly.Msg.MG_ARDUINO_SERVO_MOVE_HELPURL);
+    this.appendDummyInput("").appendField(Blockly.Msg.MG_ARDUINO_SERVO_ATTACH1);
+    this.appendDummyInput("").setAlign(Blockly.ALIGN_RIGHT).appendField(Blockly.Msg.MG_ARDUINO_SERVO_ATTACH2).appendField(new Blockly.FieldInstance('Servo', Blockly.Msg.SERVO_DEFAULT_NAME, false, false, false), 'SERVO_NAME');
+	this.appendDummyInput("").setAlign(Blockly.ALIGN_RIGHT).appendField(new Blockly.FieldDropdown([["port 2","2"], ["port 3","3"]]), "mg_u01_port");
+	//this.appendValueInput("PIN").setCheck('Number').setAlign(Blockly.ALIGN_RIGHT).appendField(Blockly.Msg.MG_ARDUINO_SERVO_MOVE_INPUT2);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setTooltip(Blockly.Msg.MG_ARDUINO_SERVO_MOVE_TOOLTIP);
+  }
+};
+
+Blockly.Blocks['molegraph_u01_servo_move'] = {
+  init: function() {
+    this.setColour(230);
+	this.setHelpUrl(Blockly.Msg.MG_ARDUINO_SERVO_MOVE_HELPURL);
+    this.appendDummyInput("").appendField(Blockly.Msg.MG_ARDUINO_SERVO_MOVE_INPUT1);
+    this.appendDummyInput("").setAlign(Blockly.ALIGN_RIGHT).appendField(new Blockly.FieldInstance('Servo', Blockly.Msg.SERVO_DEFAULT_NAME, false, false, false), 'SERVO_NAME');
+    this.appendValueInput("DEGREE").setCheck('Number').setAlign(Blockly.ALIGN_RIGHT).appendField(Blockly.Msg.MG_ARDUINO_SERVO_MOVE_DEGREE);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setTooltip(Blockly.Msg.MG_ARDUINO_SERVO_MOVE_TOOLTIP);
+  },
+  /**
+   * Called whenever anything on the workspace changes.
+   * It checks/warns if the selected instance has a config block.
+   * @this Blockly.Block
+   */
+  onchange: function() {
+    if (!this.workspace) return;  // Block has been deleted.
+
+    var instanceName = this.getFieldValue('SERVO_NAME')
+    if (Blockly.Instances.isInstancePresent(instanceName, 'Servo', this)) {
+      this.setWarningText(null);
+    } else {
+      // Set a warning to select a valid config block
+      this.setWarningText(
+        Blockly.Msg.COMPONENT_WARN.replace(
+            //'%1', Blockly.Msg.SERVO_COMPONENT).replace(
+            '%1', '').replace(
+                '%2', instanceName));
+    }
+  }
+};
+
+Blockly.Blocks['molegraph_u01_servo_read_degrees'] = {
+  init: function() {
+    this.setColour(230);
+	this.setHelpUrl(Blockly.Msg.MG_ARDUINO_SERVO_READ_DEGREES_HELPURL);
+    this.appendDummyInput("").appendField(Blockly.Msg.MG_ARDUINO_SERVO_READ_DEGREES_INPUT1);
+    this.appendDummyInput("").setAlign(Blockly.ALIGN_RIGHT).appendField(new Blockly.FieldInstance('Servo', Blockly.Msg.SERVO_DEFAULT_NAME, false, false, false), 'SERVO_NAME');
+	this.setOutput(true, 'Number');
+    this.setTooltip(Blockly.Msg.MG_ARDUINO_SERVO_READ_DEGREES_TOOLTIP);
+  },
+  /**
+   * Called whenever anything on the workspace changes.
+   * It checks/warns if the selected instance has a config block.
+   * @this Blockly.Block
+   */
+  onchange: function() {
+    if (!this.workspace) return;  // Block has been deleted.
+
+    var instanceName = this.getFieldValue('SERVO_NAME')
+    if (Blockly.Instances.isInstancePresent(instanceName, 'Servo', this)) {
+      this.setWarningText(null);
+    } else {
+      // Set a warning to select a valid config block
+      this.setWarningText(
+        Blockly.Msg.COMPONENT_WARN.replace(
+            //'%1', Blockly.Msg.SERVO_COMPONENT).replace(
+            '%1', '').replace(
+                '%2', instanceName));
+    }
+  }
+};
+
+Blockly.Blocks['molegraph_u01_servo_detach'] = {
+  init: function() {
+    this.setColour(230);
+	this.setHelpUrl('http://www.arduino.cc/playground/ComponentLib/servo');
+	this.setInputsInline(false);
+    this.appendDummyInput("").appendField(Blockly.Msg.MG_ARDUINO_SERVO_DETACH);
+    this.appendDummyInput("").setAlign(Blockly.ALIGN_RIGHT).appendField(new Blockly.FieldInstance('Servo', Blockly.Msg.SERVO_DEFAULT_NAME, false, false, false), 'SERVO_NAME');
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setTooltip('Release a pin from servo driving.');
+  },
+  /**
+   * Called whenever anything on the workspace changes.
+   * It checks/warns if the selected instance has a config block.
+   * @this Blockly.Block
+   */
+  onchange: function() {
+    if (!this.workspace) return;  // Block has been deleted.
+
+    var instanceName = this.getFieldValue('SERVO_NAME')
+    if (Blockly.Instances.isInstancePresent(instanceName, 'Servo', this)) {
+      this.setWarningText(null);
+    } else {
+      // Set a warning to select a valid config block
+      this.setWarningText(
+        Blockly.Msg.COMPONENT_WARN.replace(
+            //'%1', Blockly.Msg.SERVO_COMPONENT).replace(
+            '%1', '').replace(
+                '%2', instanceName));
+    }
   }
 };
