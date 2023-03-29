@@ -2784,6 +2784,7 @@ Blockly.Msg.MG_ARDUINO_SERVO_DETACH = "MG U01 Servo: odpojit";
 Blockly.Msg.MG_ARDUINO_COM_TOOLTIP = "Blok k odesílání dat do MoleGraph aplikace. Tato verze vyžaduje knihovnu <MoleGraph.h> a je určena pro Arduino NANO/UNO. Pro více informací navštivte MoleGraph web www.e-mole.cz/diy/molegraph";
 Blockly.Msg.MG_ARDUINO_COM_HELP = "https://www.e-mole.cz/diy/molegraph";
 Blockly.Msg.MG_ARDUINO_U01_COM_TOOLTIP = "Blok k odesílání dat do MoleGraph aplikace. Tato verze vyžaduje knihovnu <molegraphmanual.h> a je určena pro jednotku MoleGraph U01 obsahjící Arduino NANO. Pro více informací navštivte MoleGraph web www.e-mole.cz/diy/molegraph";
+Blockly.Msg.MG_ARDUINO_U01_COM_INIT_TOOLTIP = "Blok k inicializaci a nastavení systému MoleGraph. Tato verze vyžaduje knihovnu <molegraphmanual.h> a je určena pro jednotku MoleGraph U01 obsahjící Arduino NANO. Pro více informací navštivte MoleGraph web www.e-mole.cz/diy/molegraph";
 Blockly.Msg.MG_ARDUINO_U01_PORT_TOOLTIP = "Bezpečný výběr pinu pro připojení čidla/výstupu u MG U01 jednotky: výběr PORT a GPIO -> dostupné piny jsou definovány jako jednoznačné konstanty.";
 Blockly.Msg.MG_ARDUINO_U01_PULLUP_TOOLTIP = "Zapne na jednotce MG U01 10K pull-up pro vybraný port [1-4] [on/off] pro GPIO 02 (analog) (toto není interní Arduino pull-up!).";
 Blockly.Msg.MG_ARDUINO_U01_BUTTON_TOOLTIP = "Vrátí stav F tlačítka u MG U01 jednotky pro vybraný port [1-4], pokud je tlačítko stisknuto, vrátí hodnotu 'true'.";

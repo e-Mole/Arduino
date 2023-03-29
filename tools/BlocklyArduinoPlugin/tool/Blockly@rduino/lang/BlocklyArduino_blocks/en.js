@@ -2780,6 +2780,7 @@ Blockly.Msg.MG_ARDUINO_SERVO_DETACH = "MG U01 Servo: Detach";
 Blockly.Msg.MG_ARDUINO_COM_TOOLTIP = "Block for sending sensor data to MoleGraph App. This version is for Arduino NANO/UNO. For more info visit MoleGraph webpage www.e-mole.cz/diy/molegraph";
 Blockly.Msg.MG_ARDUINO_COM_HELP = "https://www.e-mole.cz/diy/molegraph";
 Blockly.Msg.MG_ARDUINO_U01_COM_TOOLTIP = "Block for sending sensor data to MoleGraph App. This version is for MoleGraph U01 unit based on Arduino NANO. For more info visit MoleGraph webpage www.e-mole.cz/diy/molegraph";
+Blockly.Msg.MG_ARDUINO_U01_COM_INIT_TOOLTIP = "Block for initialization and setup MoleGraph. This version is for MoleGraph U01 unit based on Arduino NANO. For more info visit MoleGraph webpage www.e-mole.cz/diy/molegraph";
 Blockly.Msg.MG_ARDUINO_U01_PORT_TOOLTIP = "MG U01 safe pin selection: select PORT and GPIO -> available pins are accessible via predefined constants";
 Blockly.Msg.MG_ARDUINO_U01_PULLUP_TOOLTIP = "Set MG U01 10K pull-up for selected port [1-4] [on/off] for GPIO 02 (analog) (this is not internal Arduino pull-up!).";
 Blockly.Msg.MG_ARDUINO_U01_BUTTON_TOOLTIP = "Get MG U01 F button state for selected port [1-4], if pressed return 'true'.";

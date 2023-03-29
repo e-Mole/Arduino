@@ -50,11 +50,24 @@ Blockly.Blocks['molegraph_com'] = {
   }
 };
 
+Blockly.Blocks['molegraph_u01_com_init'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("MG U01 Init")
+        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/molegraph/molegraph.png', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);        
+    this.setColour(230);
+ this.setTooltip(Blockly.Msg.MG_ARDUINO_U01_COM_INIT_TOOLTIP);
+ this.setHelpUrl(Blockly.Msg.MG_ARDUINO_COM_HELP);
+  }
+};
+
 Blockly.Blocks['molegraph_u01_com'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("MG U01")
-        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/molegraph/molegraph.png', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize))
+        .appendField("MG U01");
+        //.appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/molegraph/molegraph.png', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
     this.appendValueInput("CH1")
         .setCheck("Number")
         .setAlign(Blockly.ALIGN_RIGHT)
