@@ -2274,7 +2274,6 @@
 	  <block type="molegraph_u01_servo_detach"></block>
 	  <block type="molegraph_u01_servo_move"></block>
 	  <block type="molegraph_u01_servo_read_degrees"></block>
-      <block type="molegraph_com"></block>	  
     </category>
 	  <category name="CAT_FRETKA" colour="#00138b">
       <block type="fretka_run"></block>

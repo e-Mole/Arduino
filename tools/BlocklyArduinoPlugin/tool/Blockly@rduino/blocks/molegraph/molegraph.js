@@ -5,6 +5,7 @@ goog.provide('Blockly.Blocks.molegraph');
 goog.require('Blockly.Blocks');
 goog.require('Blockly.Types');
 
+/** OLD MoleGraph Block
 Blockly.Blocks['molegraph_com'] = {
   init: function() {
     this.appendDummyInput()
@@ -49,12 +50,14 @@ Blockly.Blocks['molegraph_com'] = {
  this.setHelpUrl(Blockly.Msg.MG_ARDUINO_COM_HELP);
   }
 };
+*/
 
 Blockly.Blocks['molegraph_u01_com_init'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("MG U01 Init")
-        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/molegraph/molegraph.png', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
+        .appendField(new Blockly.FieldImage(Blockly.pathToBlockly + 'blocks/molegraph/molegraph.png', Blockly.Arduino.imageSize, Blockly.Arduino.imageSize))		
+        .appendField("MG Init")     
+		.appendField(new Blockly.FieldDropdown([[Blockly.Msg.MG_ARDUINO_U01_UNIT_ON,"1"], [Blockly.Msg.MG_ARDUINO_U01_UNIT_OFF,"0"]]), "mg_u01_type");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);        
     this.setColour(230);
@@ -167,7 +170,7 @@ Blockly.Blocks['molegraph_u01_servo_attach'] = {
 	this.setHelpUrl(Blockly.Msg.MG_ARDUINO_SERVO_MOVE_HELPURL);
     this.appendDummyInput("").appendField(Blockly.Msg.MG_ARDUINO_SERVO_ATTACH1);
     this.appendDummyInput("").setAlign(Blockly.ALIGN_RIGHT).appendField(Blockly.Msg.MG_ARDUINO_SERVO_ATTACH2).appendField(new Blockly.FieldInstance('Servo', Blockly.Msg.SERVO_DEFAULT_NAME, false, false, false), 'SERVO_NAME');
-	this.appendDummyInput("").setAlign(Blockly.ALIGN_RIGHT).appendField(new Blockly.FieldDropdown([["port 2","2"], ["port 3","3"]]), "mg_u01_port");
+  this.appendDummyInput("").setAlign(Blockly.ALIGN_RIGHT).appendField(new Blockly.FieldDropdown([["port 2 (D10)","2"], ["port 3 (D9)","3"]]), "mg_u01_port");
 	//this.appendValueInput("PIN").setCheck('Number').setAlign(Blockly.ALIGN_RIGHT).appendField(Blockly.Msg.MG_ARDUINO_SERVO_MOVE_INPUT2);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
