@@ -12,6 +12,18 @@ Blockly.Blocks.molegraph_u01_com.getBlockType = function() {
 	return Blockly.Types.BOOLEAN;
 };
 
+Blockly.Blocks.molegraph_u01_measuring.getBlockType = function() {
+	return Blockly.Types.BOOLEAN;
+};
+
+Blockly.Blocks.molegraph_u01_measuring_start.getBlockType = function() {
+	return Blockly.Types.BOOLEAN;
+};
+
+Blockly.Blocks.molegraph_u01_measuring_stop.getBlockType = function() {
+	return Blockly.Types.BOOLEAN;
+};
+
 Blockly.Blocks.molegraph_u01_port.getBlockType = function() {
 	return Blockly.Types.BOOLEAN;
 };

@@ -2270,6 +2270,9 @@
 	  <block type="molegraph_u01_pullup"></block>
 	  <block type="molegraph_u01_button"></block>
 	  <block type="molegraph_u01_battery"></block>
+	  <block type="molegraph_u01_measuring"></block>	  
+	  <block type="molegraph_u01_measuring_start"></block>
+	  <block type="molegraph_u01_measuring_stop"></block>
 	  <block type="molegraph_u01_servo_attach"></block>
 	  <block type="molegraph_u01_servo_detach"></block>
 	  <block type="molegraph_u01_servo_move"></block>

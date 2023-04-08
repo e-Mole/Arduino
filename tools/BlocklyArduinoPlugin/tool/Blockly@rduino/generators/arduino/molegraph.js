@@ -137,6 +137,24 @@ Blockly.Arduino['molegraph_u01_com'] = function() {
   return code;
 };
 
+Blockly.Arduino['molegraph_u01_measuring'] = function(block) {
+    var code = 'moleGraph.isMeasurementInProgress()';
+  
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino['molegraph_u01_measuring_stop'] = function() {
+    var code = 'moleGraph.stopMeasurement();';
+  
+  return code;
+};
+
+Blockly.Arduino['molegraph_u01_measuring_start'] = function() {
+    var code = 'moleGraph.startMeasurement();';
+  
+  return code;
+};
+
 Blockly.Arduino['molegraph_u01_port'] = function(block) {
   var dropdown_mg_u01_port = block.getFieldValue('mg_u01_port');
   var dropdown_mg_u01_pin = block.getFieldValue('mg_u01_pin');

@@ -111,6 +111,41 @@ Blockly.Blocks['molegraph_u01_com'] = {
   }
 };
 
+Blockly.Blocks['molegraph_u01_measuring'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(Blockly.Msg.MG_ARDUINO_U01_MEASURING_BLOCK);
+    this.setOutput(true, "Boolean");
+    this.setColour(260);
+ this.setTooltip(Blockly.Msg.MG_ARDUINO_U01_MEASURING_TOOLTIP);
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['molegraph_u01_measuring_start'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("MG START");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+  this.setTooltip(Blockly.Msg.MG_ARDUINO_U01_MEASURING_START_TOOLTIP);
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['molegraph_u01_measuring_stop'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("MG STOP");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+  this.setTooltip(Blockly.Msg.MG_ARDUINO_U01_MEASURING_STOP_TOOLTIP);
+ this.setHelpUrl("");
+  }
+};
+
 Blockly.Blocks['molegraph_u01_port'] = {
   init: function() {
     this.appendDummyInput()

@@ -19,5 +19,4 @@ Seznam vyzkoušených a počeštěných knihoven
 - Sharp IR - Podpora pro měření vzdálenosti pomocí snímačů Sharp GP2Yxxxx
 - Motor Shieldy - Obsluha různých budičů pro ovládání kolových/pásových robotů pomocí PWM
 - Neopixel WS2812B - Ovládání adresovatelných LED pásků
-
-![](https://github.com/milikiller/arduino/blob/master/nahled.png?raw=true)
+- MoleGraphManual - odesílání dat do aplikace MoelGraph
