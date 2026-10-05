@@ -2,24 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=tools/BlocklyArduinoPlugin/tool/Blockly@rduino/">
-    <title>Redirecting to Blockly@rduino...</title>
+    <title>Loading Blockly@rduino...</title>
+    <script>
+      // Zjistí jazyk prohlížeče uživatele
+      var userLang = navigator.language || navigator.userLanguage;
+      var langParam = "en"; // Angličtina jako výchozí
+      
+      // Pokud je prohlížeč český nebo slovenský, přepneme na CS
+      if (userLang.startsWith("cs") || userLang.startsWith("sk")) {
+        langParam = "cs";
+      }
+      
+      // Provede přesměrování
+      var targetUrl = "tools/BlocklyArduinoPlugin/tool/Blockly@rduino/?font=O&card=arduino_nano&lang=" + langParam;
+      window.location.replace(targetUrl);
+    </script>
     <style>
       body { font-family: Arial, sans-serif; text-align: center; margin-top: 15%; color: #333; }
-      a { color: #0078D7; text-decoration: none; font-weight: bold; }
+      a { color: #0078D7; text-decoration: none; font-weight: bold; margin: 0 15px; font-size: 18px; }
       a:hover { text-decoration: underline; }
-      hr { width: 50%; margin: 20px auto; border: 0; border-top: 1px solid #ccc; }
+      .fallback { margin-top: 30px; }
     </style>
   </head>
   <body>
-    <!-- English (Primary) -->
-    <h2>Loading Blockly@rduino...</h2>
-    <p>If you are not redirected automatically, please <a href="tools/BlocklyArduinoPlugin/tool/Blockly@rduino/">click here</a>.</p>
+    <h2>Loading... / Načítání...</h2>
     
-    <hr>
-    
-    <!-- Czech (Secondary) -->
-    <h2>Načítání Blockly@rduino...</h2>
-    <p>Pokud nebudete automaticky přesměrováni, <a href="tools/BlocklyArduinoPlugin/tool/Blockly@rduino/">klikněte zde</a>.</p>
+    <div class="fallback">
+      <p>If you are not redirected automatically, please choose your language:<br>
+      Pokud nebudete automaticky přesměrováni, vyberte si jazyk:</p>
+      
+      <a href="tools/BlocklyArduinoPlugin/tool/Blockly@rduino/?font=O&lang=cs&card=arduino_nano">🇨🇿 Čeština</a>
+      <a href="tools/BlocklyArduinoPlugin/tool/Blockly@rduino/?font=O&lang=en&card=arduino_nano">🇬🇧 English</a>
+    </div>
   </body>
 </html>
