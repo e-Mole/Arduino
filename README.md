@@ -9,8 +9,19 @@
 
 <img src="https://www.e-mole.cz/sites/default/files/articles/photos/scr-26-en-mg-arduinoblockly-analog-nano-uno.png" alt="MoleGraph in Blockly@rduino" />
 
-### 🚀 Ready-to-Use Portable Package
-To minimize setup time in classrooms, we provide a **pre-configured portable package** based on the Czech fork by **[milikiller](https://github.com/milikiller/arduino)**.
+### 🌐 Web-Based Version (Recommended for Arduino IDE 2.x)
+You can now run the complete visual environment directly in your web browser with zero installation. This is the ideal, secure workflow for modern classrooms and users of the new **Arduino IDE 2.x**.
+
+👉 **[Launch Blockly@rduino in Browser](https://e-mole.github.io/Arduino)** *(Defaults to Arduino Nano, available in EN/CZ)*
+
+**How to use it with Arduino IDE 2.x:**
+1. Open the web link above and visually build your program using blocks.
+2. The standard Arduino C++ code is automatically generated on the right side of the screen.
+3. Click the **Copy** button (or select and copy the code manually).
+4. Open **Arduino IDE 2.x**, paste the code into a blank sketch, and upload it to your board as usual!
+
+### 🚀 Portable Package (Arduino IDE 1.8.x)
+To minimize setup time for users preferring the older, fully integrated offline environment, we provide a **pre-configured portable package** based on the Czech fork by **[milikiller](https://github.com/milikiller/arduino)**.
 
 *   **No Installation Required:** Based on **Arduino IDE 1.8.13 (Portable)**. Just unzip and run `arduino.exe`.
 *   **Integrated Workflow:** The visual environment launches directly from the IDE menu: `Tools > Blockly@arduino`.
