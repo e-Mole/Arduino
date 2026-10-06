@@ -75,11 +75,11 @@ Blockly.Arduino['molegraph_com'] = function() {
 Blockly.Arduino['molegraph_u01_com_init'] = function(block) {
   var dropdown_mg_u01_type = block.getFieldValue('mg_u01_type');
   if (dropdown_mg_u01_type == '1') { 
-	Blockly.Arduino.includes_['molegraph_u01_incl'] = '//********** MoleGraphManual ***************\n//       MoleGraph Probeware code       \n//    (www.e-mole.cz/diy/molegraph) \n//******************************************//\n//Enable MoleGraph U01 shield function\n#define SYSTEM\n//Link MoleGraphManual library (www.e-mole.cz/diy/molegraph)\n#include <molegraphmanual.h>';
+	Blockly.Arduino.includes_['molegraph_u01_incl'] = '//********** MoleGraphManual ***************\n//       MoleGraph Probeware code       \n//    (www.e-mole.cz/diy/molegraph) \n//******************************************//\n//Enable MoleGraph U01 shield function\n#define SYSTEM\n//Link MoleGraphManual library (www.e-mole.cz/diy/molegraph)\n#include <MoleGraphManual.h>';
 	} else { 
-	Blockly.Arduino.includes_['molegraph_u01_incl'] = '//********** MoleGraphManual ***************\n//       MoleGraph Probeware code       \n//    (www.e-mole.cz/diy/molegraph) \n//******************************************//\n\n//Link MoleGraphManual library (www.e-mole.cz/diy/molegraph)\n#include <molegraphmanual.h>';
+	Blockly.Arduino.includes_['molegraph_u01_incl'] = '//********** MoleGraphManual ***************\n//       MoleGraph Probeware code       \n//    (www.e-mole.cz/diy/molegraph) \n//******************************************//\n\n//Link MoleGraphManual library (www.e-mole.cz/diy/molegraph)\n#include <MoleGraphManual.h>';
   }
-  //Blockly.Arduino.includes_['molegraph_u01_incl'] = '//********** MoleGraphManual ***************\n//       MoleGraph Probeware code       \n//    (www.e-mole.cz/diy/molegraph) \n//******************************************//\n//Enable MoleGraph U01 shield function\n#define SYSTEM\n//Link MoleGraphManual library (www.e-mole.cz/diy/molegraph)\n#include <molegraphmanual.h>';
+  //Blockly.Arduino.includes_['molegraph_u01_incl'] = '//********** MoleGraphManual ***************\n//       MoleGraph Probeware code       \n//    (www.e-mole.cz/diy/molegraph) \n//******************************************//\n//Enable MoleGraph U01 shield function\n#define SYSTEM\n//Link MoleGraphManual library (www.e-mole.cz/diy/molegraph)\n#include <MoleGraphManual.h>';
   Blockly.Arduino.definitions_['molegraph_u01_def1'] = 'MoleGraphManual moleGraph; // Create MoleGraph instance\n';
   Blockly.Arduino.setups_['molegraph_u01_stp'] =
   '\n  moleGraph.init();\n'
@@ -108,7 +108,7 @@ Blockly.Arduino['molegraph_u01_com'] = function() {
   if (value_ch7 == '') { value_ch7 = ''; } else { value_ch7 = '  moleGraph.setChannelValue(7, ' + value_ch7 + ');\n'; }
   if (value_ch8 == '') { value_ch8 = ''; } else { value_ch8 = '  moleGraph.setChannelValue(8, ' + value_ch8 + ');\n'; }
   
-  //Blockly.Arduino.includes_['molegraph_u01_incl'] = '#include <molegraphmanual.h> // Link MoleGraph library (www.e-mole.cz/diy/molegraph)';
+  //Blockly.Arduino.includes_['molegraph_u01_incl'] = '#include <MoleGraphManual.h> // Link MoleGraph library (www.e-mole.cz/diy/molegraph)';
   
   //Blockly.Arduino.definitions_['molegraph_u01_def1'] = 'MoleGraphManual moleGraph; // Create MoleGraph instance\n';
   
